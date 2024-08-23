@@ -1125,7 +1125,13 @@ body.sj-home .sj-header{border:0;}
 .sj-navigationarea{
 	width:100%;
 	float:left;
-	padding:30px 0;
+	padding:20px 0;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sj-navigationarea img{
+	width: 200px !important;
 }
 .sj-logo{
 	float:left;
@@ -4199,7 +4205,14 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 		width: 80px !important;
 	}
   }
+  .sj_logo_new {
+	display: none !important;
+}
   
 
 
-	
+	.sj-comingsoonhead{
+		display: flex;
+    justify-content: space-around;
+    align-items: center;
+	}

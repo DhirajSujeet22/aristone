@@ -174,7 +174,7 @@ li {
 }
 ul ul { margin-left: 20px; }
 ol {
-	float: none;
+	float: inline-end;
 	list-style: decimal;
 	padding-left: 15px;
 }
@@ -1012,8 +1012,9 @@ body.sj-home .sj-header{border:0;}
 	table-layout: fixed;
 }
 .sj-topbar{
-	width:100%;
-	float:left;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
 	padding:20px 0;
 	border-bottom:1px solid #ddd;
 }
@@ -1131,7 +1132,7 @@ body.sj-home .sj-header{border:0;}
 	padding:4px 0;
 }
 .sj-logo a,
-.sj-logo a img{display:block;}
+.sj-logo a img
 .sj-logo a img{
 	width:100%;
 	height:auto;
@@ -2005,7 +2006,7 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 .sj-footerbottom{
 	width:100%;
 	float:left;
-	padding:16px 0;
+	padding:16px 16px;
 	text-align:center;
 	border-top:1px solid #ddd;
 }
@@ -4066,7 +4067,9 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 	font-size: 13px;
 	font-style:normal;
 }
+
 .sj-checkpaymentmethod .sj-title{margin-bottom:30px; }
+
 /*==============================================
 			Preloader Style						
 ==============================================*/
@@ -4168,3 +4171,35 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 	75% {
 		content: "Loading...";
 	}
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+	.sj-topbar {
+	 flex-direction: column;
+	}
+	.sj_logo_new{
+		display: none;
+	}
+	
+	.sj-navigationarea{
+		padding-top: 0;
+	}
+	.sj-logo img{
+		width: 180px !important;
+	}
+	.sj_logo_new img{
+		display: none !important;
+	}
+	.sj_logo_new {
+		display: none !important;
+	}
+	.sj-tagnew{
+		display: none;
+	}
+	.sj-fcol-logo{
+		width: 80px !important;
+	}
+  }
+  
+
+
+	

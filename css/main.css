@@ -4188,6 +4188,7 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 	
 	.sj-navigationarea{
 		padding-top: 0;
+		display: block;
 	}
 	.sj-logo img{
 		width: 180px !important;
@@ -4214,5 +4215,5 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 	.sj-comingsoonhead{
 		display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
 	}

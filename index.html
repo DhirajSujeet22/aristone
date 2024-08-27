@@ -66,13 +66,14 @@
 						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 							<div class="sj-topbar">
 								<ul class="sj-socialicons sj-socialiconssimple">
-									<li class="sj-facebook"><a href="https://www.facebook.com/people/AristonPublications/61558764076539/"><i
+									<li class="sj-facebook"><a
+											href="https://www.facebook.com/people/AristonPublications/61558764076539/"><i
 												class="fa fa-facebook-f"></i></a></li>
 									<li class="sj-twitter"><a href="https://x.com/AristonPubs"><i
 												class="fab fa-twitter"></i></a></li>
-									<li class="sj-linkedin"><a href="#"><i
-												class="fab fa-linkedin-in"></i></a></li>
-									<li class="sj-googleplus"><a href="https://www.youtube.com/@AristonPublications"><i class="bi bi-youtube"></i></a></li>
+									<li class="sj-linkedin"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li class="sj-googleplus"><a href="https://www.youtube.com/@AristonPublications"><i
+												class="bi bi-youtube"></i></a></li>
 								</ul>
 								<div class="sj-languagelogin">
 									<div class="sj-loginarea">
@@ -153,9 +154,8 @@
 									<strong class="sj-logo sj_logo_new"><a href="#"><img
 												src="images/Ariston-Publications-logo (1).webp" alt="company logo here"
 												style="width: 50px;"></a></strong>
-									<strong class="sj-logo"><a href="#"><img
-												src="images/small-width_logo.png" alt="company logo here"
-												style="width: 50px;"></a></strong>
+									<strong class="sj-logo"><a href="#"><img src="images/small-width_logo.png"
+												alt="company logo here" style="width: 50px;"></a></strong>
 								</div>
 								<div class="sj-rightarea">
 									<nav id="sj-nav" class="sj-nav navbar-expand-lg">
@@ -168,10 +168,10 @@
 											<ul>
 												<li
 													class="current-menu-item menu-item-has-children page_item_has_children">
-													<a href="javascript:void(0);"><i class="lnr lnr-home"></i></a>
-													<ul class="sub-menu">
+													<a href="#"><i class="lnr lnr-home"></i></a>
+													<!-- <ul class="sub-menu">
 														<li><a href="#">Home V One</a></li>
-													</ul>
+													</ul> -->
 												</li>
 												<li>
 													<a href="aboutus.html">About us</a>
@@ -272,16 +272,52 @@
 						</div>
 						<div class="col-12 col-sm-12 col-md-6 col-lg-6">
 							<div class="sj-bannercontent">
-								<h1><span>We Welcome Latest</span>Research Articles in<span>Field of Science</span></h1>
+								<h1><span> Welcome To </span><b>Ariston Publication</b> <span>High-Quality Research for
+										a Better Tomorrow</span></h1>
 								<div class="sj-description">
-									<p>Consectetur adipisicing elit sedaui sedaui labore quis nostrud exercitation... <a
-											href="javascript:void(0);">Read more</a></p>
+									<p class="new__1">
+										 Ariston Publications is dedicated to advancing
+										the frontiers of knowledge through high-quality scientific publishing. Its
+										mission is to provide a platform for researchers, scholars, and academics to
+										disseminate their findings and contribute to the global scientific community.
+										With a commitment to excellence, integrity, and innovation, Ariston Publications
+										strives to be a trusted partner for researchers worldwide.
+										<span id="dots">...</span>
+										<span id="more">
+											Ariston Publications is committed to supporting the global research
+											community in its quest for knowledge and discovery. Join us in our mission
+											to make science accessible, inclusive, and impactful. Our scope is dynamic
+											and inclusive, reflecting the diverse and evolving nature of scientific
+											inquiry. We welcome contributions from all fields of study that contribute
+											to the advancement of knowledge and understanding.
+										</span>
+										<a href="javascript:void(0);" onclick="toggleReadMore()" id="readMoreBtn">Read
+											more</a>
+									</p>
 								</div>
+
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<script>
+				function toggleReadMore() {
+					const dots = document.getElementById("dots");
+					const moreText = document.getElementById("more");
+					const btnText = document.getElementById("readMoreBtn");
+
+					if (dots.style.display === "none") {
+						dots.style.display = "inline";
+						btnText.innerHTML = "Read more";
+						moreText.style.display = "none";
+					} else {
+						dots.style.display = "none";
+						btnText.innerHTML = "Read less";
+						moreText.style.display = "inline";
+					}
+				}
+			</script>
 			<!--************************************
 					Home Banner End
 			*************************************-->
@@ -314,10 +350,7 @@
 											<h2>Explore Latest Researches</h2>
 										</div>
 										<div class="sj-description">
-											<p>Consectetur adipisicing elied dotaem eiusmod incididunt ulabore etoimisi
-												dolore magna aliqua aenimalie admie veniam aistrud exrcittion ullamco
-												laboris utaliquip commodouis aute irure dolorendries in voluptate velit
-												esse cillum dolore.</p>
+											<p>At Ariston Publications, we are thrilled to welcome you to a hub of cutting-edge research and innovation. Our platform is designed to showcase the latest scientific findings across a multitude of disciplines. Dive into a wealth of knowledge and explore pioneering research that drives progress and fosters discovery. Join us in advancing the frontiers of science and contributing to a brighter future for all.</p>
 										</div>
 										<div class="sj-btnarea">
 											<a class="sj-btn" href="javascript:void(0);">Read More</a>
@@ -339,7 +372,7 @@
 								*************************************-->
 									<section class="sj-haslayout sj-sectioninnerspace">
 										<div class="sj-borderheading">
-											<h3>Editor’s Pick</h3>
+											<h3>Editor’s </h3>
 											<a class="sj-btnview" href="javascript:void(0);">View All</a>
 										</div>
 										<div id="sj-editorchoiceslider"
@@ -353,10 +386,8 @@
 													<div class="sj-postcontent">
 														<div class="sj-head">
 															<span class="sj-username"><a
-																	href="javascript:void(0);">Hillary
-																	Farnham</a></span>
-															<h3><a href="javascript:void(0);">Toward Better-Quality
-																	Compounded Drugs — An Update form</a></h3>
+																	href="javascript:void(0);">Prof. D .K Dwivedi</a></span>
+															<h3><a href="javascript:void(0);">Edito-in-chief </a></h3>
 														</div>
 														<div class="sj-description">
 															<p>Consectetur adipisicing elit sed do eiusmod tempor
@@ -375,9 +406,8 @@
 													<div class="sj-postcontent">
 														<div class="sj-head">
 															<span class="sj-username"><a
-																	href="javascript:void(0);">Coleman Hoff</a></span>
-															<h3><a href="javascript:void(0);">Toward Better-Quality
-																	Compounded Drugs</a></h3>
+																	href="javascript:void(0);">Dr. Rahul Patil</a></span>
+															<h3><a href="javascript:void(0);">Edito-in-chief</a></h3>
 														</div>
 														<div class="sj-description">
 															<p>Consectetur adipisicing elit sed do eiusmod tempor
@@ -396,10 +426,8 @@
 													<div class="sj-postcontent">
 														<div class="sj-head">
 															<span class="sj-username"><a
-																	href="javascript:void(0);">Frederica
-																	Kinnaird</a></span>
-															<h3><a href="javascript:void(0);">A Milestone for CART Cells
-																	&amp; Treatment</a></h3>
+																	href="javascript:void(0);">Dr. Ashok Chougale </a></span>
+															<h3><a href="javascript:void(0);">Edito-in-chief</a></h3>
 														</div>
 														<div class="sj-description">
 															<p>Consectetur adipisicing elit sed do eiusmod tempor
@@ -420,10 +448,8 @@
 													<div class="sj-postcontent">
 														<div class="sj-head">
 															<span class="sj-username"><a
-																	href="javascript:void(0);">Hillary
-																	Farnham</a></span>
-															<h3><a href="javascript:void(0);">Toward Better-Quality
-																	Compounded Drugs — An Update form</a></h3>
+																	href="javascript:void(0);">Prof. Brijesh. K. Pandey</a></span>
+															<h3><a href="javascript:void(0);">Editor </a></h3>
 														</div>
 														<div class="sj-description">
 															<p>Consectetur adipisicing elit sed do eiusmod tempor
@@ -442,9 +468,8 @@
 													<div class="sj-postcontent">
 														<div class="sj-head">
 															<span class="sj-username"><a
-																	href="javascript:void(0);">Coleman Hoff</a></span>
-															<h3><a href="javascript:void(0);">Toward Better-Quality
-																	Compounded Drugs</a></h3>
+																	href="javascript:void(0);">Prof. Xiang Wu</a></span>
+															<h3><a href="javascript:void(0);">Editors </a></h3>
 														</div>
 														<div class="sj-description">
 															<p>Consectetur adipisicing elit sed do eiusmod tempor
@@ -463,10 +488,8 @@
 													<div class="sj-postcontent">
 														<div class="sj-head">
 															<span class="sj-username"><a
-																	href="javascript:void(0);">Frederica
-																	Kinnaird</a></span>
-															<h3><a href="javascript:void(0);">A Milestone for CART Cells
-																	&amp; Treatment</a></h3>
+																	href="javascript:void(0);">Prof. Bal Chandra Yadav</a></span>
+															<h3><a href="javascript:void(0);">Editors</a></h3>
 														</div>
 														<div class="sj-description">
 															<p>Consectetur adipisicing elit sed do eiusmod tempor
@@ -487,10 +510,8 @@
 													<div class="sj-postcontent">
 														<div class="sj-head">
 															<span class="sj-username"><a
-																	href="javascript:void(0);">Hillary
-																	Farnham</a></span>
-															<h3><a href="javascript:void(0);">Toward Better-Quality
-																	Compounded Drugs — An Update form</a></h3>
+																	href="javascript:void(0);">Dr. Xin Zhang</a></span>
+															<h3><a href="javascript:void(0);">Editors</a></h3>
 														</div>
 														<div class="sj-description">
 															<p>Consectetur adipisicing elit sed do eiusmod tempor
@@ -509,9 +530,8 @@
 													<div class="sj-postcontent">
 														<div class="sj-head">
 															<span class="sj-username"><a
-																	href="javascript:void(0);">Coleman Hoff</a></span>
-															<h3><a href="javascript:void(0);">Toward Better-Quality
-																	Compounded Drugs</a></h3>
+																	href="javascript:void(0);">Dr. Mantesh K. Yadav</a></span>
+															<h3><a href="javascript:void(0);">Editors </a></h3>
 														</div>
 														<div class="sj-description">
 															<p>Consectetur adipisicing elit sed do eiusmod tempor
@@ -530,10 +550,70 @@
 													<div class="sj-postcontent">
 														<div class="sj-head">
 															<span class="sj-username"><a
-																	href="javascript:void(0);">Frederica
-																	Kinnaird</a></span>
-															<h3><a href="javascript:void(0);">A Milestone for CART Cells
-																	&amp; Treatment</a></h3>
+																	href="javascript:void(0);">Dr. Kai Song</a></span>
+															<h3><a href="javascript:void(0);">Editors</a></h3>
+														</div>
+														<div class="sj-description">
+															<p>Consectetur adipisicing elit sed do eiusmod tempor
+																incididunt ut labore et dolore magna aliqua ut enim ad
+																minim veniam quis nostrud exercitation ullamco...</p>
+														</div>
+														<a class="sj-btn" href="javascript:void(0);">View Full
+															Article</a>
+													</div>
+												</article>
+											</div>
+											<div class="item">
+												<article class="sj-post sj-editorchoice">
+													<figure class="sj-postimg">
+														<img src="images/editorchoice/img-01.jpg"
+															alt="image description">
+													</figure>
+													<div class="sj-postcontent">
+														<div class="sj-head">
+															<span class="sj-username"><a
+																	href="javascript:void(0);">Prof. Rajesh K. Verma</a></span>
+															<h3><a href="javascript:void(0);">Editors</a></h3>
+														</div>
+														<div class="sj-description">
+															<p>Consectetur adipisicing elit sed do eiusmod tempor
+																incididunt ut labore et dolore magna aliqua ut enim ad
+																minim veniam quis nostrud exercitation ullamco...</p>
+														</div>
+														<a class="sj-btn" href="javascript:void(0);">View Full
+															Article</a>
+													</div>
+												</article>
+												<article class="sj-post sj-editorchoice">
+													<figure class="sj-postimg">
+														<img src="images/editorchoice/img-02.jpg"
+															alt="image description">
+													</figure>
+													<div class="sj-postcontent">
+														<div class="sj-head">
+															<span class="sj-username"><a
+																	href="javascript:void(0);">Dr. Navneet K. Gupta</a></span>
+															<h3><a href="javascript:void(0);">Editors </a></h3>
+														</div>
+														<div class="sj-description">
+															<p>Consectetur adipisicing elit sed do eiusmod tempor
+																incididunt ut labore et dolore magna aliqua ut enim ad
+																minim veniam quis nostrud exercitation ullamco...</p>
+														</div>
+														<a class="sj-btn" href="javascript:void(0);">View Full
+															Article</a>
+													</div>
+												</article>
+												<article class="sj-post sj-editorchoice">
+													<figure class="sj-postimg">
+														<img src="images/editorchoice/img-03.jpg"
+															alt="image description">
+													</figure>
+													<div class="sj-postcontent">
+														<div class="sj-head">
+															<span class="sj-username"><a
+																	href="javascript:void(0);">Prof. Chinna Bathula</a></span>
+															<h3><a href="javascript:void(0);">Editors</a></h3>
 														</div>
 														<div class="sj-description">
 															<p>Consectetur adipisicing elit sed do eiusmod tempor
@@ -553,7 +633,7 @@
 									<!--************************************
 										Previous Posts Start
 								*************************************-->
-									<section class="sj-haslayout sj-sectioninnerspace">
+									<!-- <section class="sj-haslayout sj-sectioninnerspace">
 										<div class="sj-borderheading">
 											<h3>Previous Issues</h3>
 											<a class="sj-btnview" href="javascript:void(0);">View All</a>
@@ -1764,7 +1844,7 @@
 												</div>
 											</div>
 										</div>
-									</section>
+									</section> -->
 									<!--************************************
 										Previous Posts End
 								*************************************-->
@@ -1773,7 +1853,7 @@
 								*************************************-->
 									<section class="sj-haslayout sj-sectioninnerspace">
 										<div class="sj-borderheading">
-											<h3>Coming In 2018</h3>
+											<h3>Journals</h3>
 											<a class="sj-btnview" href="javascript:void(0);">View All</a>
 										</div>
 										<div id="sj-upcomingbooksslider"
@@ -1781,11 +1861,11 @@
 											<div class="item">
 												<div class="sj-upcomingbook">
 													<figure class="sj-upcomingbookimg">
-														<img src="images/comingbooks/img-01.jpg"
+														<img src="images/ariston publication img/Cover-page-Sci-Engg-Advances-v2-1.webp"
 															alt="image description">
 													</figure>
 													<div class="sj-postcontent">
-														<h3><a href="javascript:void(0);">Revealing of Behavioral</a>
+														<h3><a href="javascript:void(0);">Advances Science Engg</a>
 														</h3>
 													</div>
 												</div>
@@ -1793,22 +1873,22 @@
 											<div class="item">
 												<div class="sj-upcomingbook">
 													<figure class="sj-upcomingbookimg">
-														<img src="images/comingbooks/img-02.jpg"
+														<img src="images/ariston publication img/matsci-express.webp"
 															alt="image description">
 													</figure>
 													<div class="sj-postcontent">
-														<h3><a href="javascript:void(0);">Communication Theory</a></h3>
+														<h3><a href="javascript:void(0);">Maths Science Expresss</a></h3>
 													</div>
 												</div>
 											</div>
 											<div class="item">
 												<div class="sj-upcomingbook">
 													<figure class="sj-upcomingbookimg">
-														<img src="images/comingbooks/img-03.jpg"
+														<img src="images/ariston publication img/WhatsApp-Image-2024-05-16-at-6.57.38-AM.webp"
 															alt="image description">
 													</figure>
 													<div class="sj-postcontent">
-														<h3><a href="javascript:void(0);">Translational Animal</a></h3>
+														<h3><a href="javascript:void(0);">Chemsci Advance </a></h3>
 													</div>
 												</div>
 											</div>
@@ -1892,8 +1972,8 @@
 								*************************************-->
 									<section class="sj-haslayout sj-sectioninnerspace">
 										<div class="sj-borderheading">
-											<h3>What's Hot In News</h3>
-											<a class="sj-btnview" href="javascript:void(0);">View All</a>
+											<h3>Latest Events And News</h3>
+											<a class="sj-btnview" href="newsgrid.html">View All</a>
 										</div>
 										<div class="sj-newsposts">
 											<div id="sj-newsarticlesslider"
@@ -1906,13 +1986,12 @@
 														<div class="sj-newscontent">
 															<div class="sj-newshead">
 																<time datetime="2018-12-12"
-																	class="sj-posttimedate">Tuesday, Apr 21, 2017</time>
-																<h3><a href="javascript:void(0);">Moving Toward
-																		Better-Quality Compounded Drugs</a></h3>
+																	class="sj-posttimedate">25 March, 2024</time>
+																<h3><a href="newsgrid.html">Exciting News from MatSci Express!</a></h3>
 															</div>
 															<div class="sj-description">
-																<p>Consectetur adipisicing elit sed incididunt labore...
-																	<a href="javascript:void(0);">Read More</a>
+																<p>Featuring a captivating collection of research articles and reviews...
+																	<a href="newsgrid.html">Read More</a>
 																</p>
 															</div>
 														</div>
@@ -1926,13 +2005,12 @@
 														<div class="sj-newscontent">
 															<div class="sj-newshead">
 																<time datetime="2018-12-12"
-																	class="sj-posttimedate">Tuesday, Apr 21, 2017</time>
-																<h3><a href="javascript:void(0);">Moving Toward
-																		Better-Quality Compounded Drugs</a></h3>
+																	class="sj-posttimedate">15 January, 2024</time>
+																<h3><a href="javascript:void(0);"> Ariston Publications Introduces SciEngg Advances Journal! </a></h3>
 															</div>
 															<div class="sj-description">
-																<p>Consectetur adipisicing elit sed incididunt labore...
-																	<a href="javascript:void(0);">Read More</a>
+																<p>SciEngg Advances aims to be a trailblazer in the scientific community...
+																	<a href="newsgrid.html">Read More</a>
 																</p>
 															</div>
 														</div>
@@ -1946,12 +2024,11 @@
 														<div class="sj-newscontent">
 															<div class="sj-newshead">
 																<time datetime="2018-12-12"
-																	class="sj-posttimedate">Tuesday, Apr 21, 2017</time>
-																<h3><a href="javascript:void(0);">Moving Toward
-																		Better-Quality Compounded Drugs</a></h3>
+																	class="sj-posttimedate"> 11 January, 2024</time>
+																<h3><a href="javascript:void(0);">Ariston Publications Launches ChemSci Advances Journal! </a></h3>
 															</div>
 															<div class="sj-description">
-																<p>Consectetur adipisicing elit sed incididunt labore...
+																<p>ChemSci Advances aims to be a beacon of excellence in the scientific community...
 																	<a href="javascript:void(0);">Read More</a>
 																</p>
 															</div>
@@ -1966,13 +2043,12 @@
 														<div class="sj-newscontent">
 															<div class="sj-newshead">
 																<time datetime="2018-12-12"
-																	class="sj-posttimedate">Tuesday, Apr 21, 2017</time>
-																<h3><a href="javascript:void(0);">Moving Toward
-																		Better-Quality Compounded Drugs</a></h3>
+																	class="sj-posttimedate">03 January, 2024</time>
+																<h3><a href="javascript:void(0);">Ariston Publications Proudly Launches MatSci Express Journal!</a></h3>
 															</div>
 															<div class="sj-description">
-																<p>Consectetur adipisicing elit sed incididunt labore...
-																	<a href="javascript:void(0);">Read More</a>
+																<p>MatSci Express promises to be a hub of innovation and discovery...
+																	<a href="newsgrid.html">Read More</a>
 																</p>
 															</div>
 														</div>
@@ -2020,7 +2096,7 @@
 											</form>
 										</div>
 									</div>
-									<div class="sj-widget sj-widgetimpactfector">
+									<!-- <div class="sj-widget sj-widgetimpactfector">
 										<div class="sj-widgetcontent">
 											<ul>
 												<li>
@@ -2036,54 +2112,48 @@
 												</li>
 											</ul>
 										</div>
-									</div>
+									</div> -->
 									<div class="sj-widget sj-widgetnoticeboard">
 										<div class="sj-widgetheading">
 											<h3>Notice Board</h3>
 										</div>
 										<div class="sj-widgetcontent">
 											<ul>
-												<li><a href="javascript:void(0);">Adipisicing elitaium sed dotas eiusm
-														tempor incididunt utae labore etiate dolore magna aliqua
-														enim.</a></li>
-												<li><a href="javascript:void(0);">Labore etiat dolore magna aliquaen ad
-														minim veniam.</a></li>
-												<li><a href="javascript:void(0);">Duis aute irure dolor in
-														reprehender</a></li>
+												<li><a href="javascript:void(0);">Discover the latest research articles and publications at Ariston.</a></li>
+												<li><a href="javascript:void(0);">Stay updated with upcoming journal release dates and submission deadlines.</a></li>
+												<li><a href="javascript:void(0);">Join our community to contribute to advancing global knowledge.</a></li>
 											</ul>
+											
 										</div>
 									</div>
-									<div class="sj-widget sj-widgetadd">
+									<!-- <div class="sj-widget sj-widgetadd">
 										<span class="sj-headtitle">Advertisment 270 x270</span>
 										<div class="sj-widgetcontent">
 											<figure class="sj-addimage"><a href="javascript:void(0);"><img
 														src="images/widget-add.jpg" alt="image description"></a>
 											</figure>
 										</div>
-									</div>
+									</div> -->
 									<div class="sj-widget sj-widgetquestions">
 										<div class="sj-widgetheading">
 											<h3>Question Of The Week</h3>
 										</div>
 										<div class="sj-widgetcontent">
 											<div class="sj-description">
-												<p>Consectetur adipisicing elit, sed aeiuse tempor incididunt ut labore
-													etamiudon magna aliqua enim ad minim?</p>
+												<p>Ariston Publications explores new frontiers in scientific research. This week's question highlights our ongoing commitment to knowledge advancement. Which of the following best represents a reliable diagnostic method for tuberculosis?</p>
 											</div>
 											<div class="sj-questions">
 												<div class="sj-selectgroup">
 													<span class="sj-radio">
-														<input id="sj-qone" type="radio" name="question" value="qone"
-															checked="">
+														<input id="sj-qone" type="radio" name="question" value="qone" checked="">
 														<label for="sj-qone">Sputum stain for acid-fast bacilli</label>
 													</span>
 													<span class="sj-radio">
 														<input id="sj-qtwo" type="radio" name="question" value="qtwo">
-														<label for="sj-qtwo">Pleural biopsy</label>
+														<label for "sj-qtwo">Pleural biopsy</label>
 													</span>
 													<span class="sj-radio">
-														<input id="sj-qthree" type="radio" name="question"
-															value="qthree">
+														<input id="sj-qthree" type="radio" name="question" value="qthree">
 														<label for="sj-qthree">Pleural fluid amylase</label>
 													</span>
 													<span class="sj-radio">
@@ -2094,14 +2164,15 @@
 												<a class="sj-btn" href="javascript:void(0);">Submit Now</a>
 											</div>
 										</div>
+										
 									</div>
-									<div class="sj-widget sj-widgetadd">
+									<!-- <div class="sj-widget sj-widgetadd">
 										<div class="sj-widgetcontent">
 											<figure class="sj-addimage"><a href="javascript:void(0);"><img
 														src="images/widget-add2.jpg" alt="image description"></a>
 											</figure>
 										</div>
-									</div>
+									</div> -->
 								</aside>
 							</div>
 						</div>
@@ -2121,23 +2192,26 @@
 						<div class="sj-footercolumns">
 							<div class="col-12 col-sm-6 col-md-6 col-lg-3 float-left">
 								<div class="sj-fcol sj-footeraboutus">
-									<strong class="sj-logo sj-fcol-logo">
-										<a href="#"><img src="images/Ariston-Publications-logo (1).webp"
+									<strong class="sj-logo sj-fcol-logo sj-navigationarea p-0">
+										<a href="#"><img src="images/small-width_logo.png"
 												alt="image description" style="width: 50px;"></a>
 									</strong>
 									<div class="sj-description">
-										<p>Eiusmod tempor incididunt ut labore etai dolore magna aliqua enim nostrud
-											exercitation... <a href="javascript:void(0);">Read More</a></p>
+										<p>Publishing Excellence
+											Inspiring Progress</p>
 									</div>
 									<ul class="sj-socialicons sj-socialiconssimple">
-										<li class="sj-facebook"><a href="https://www.facebook.com/people/AristonPublications/61558764076539/"><i
+										<li class="sj-facebook"><a
+												href="https://www.facebook.com/people/AristonPublications/61558764076539/"><i
 													class="fab fa-facebook-f"></i></a></li>
 										<li class="sj-twitter"><a href="https://x.com/AristonPubs"><i
 													class="fab fa-twitter"></i></a></li>
-										<li class="sj-linkedin"><a href="#"><i
-													class="fab fa-linkedin-in"></i></a></li>
-										<li class="sj-googleplus"><a href="https://www.instagram.com/aristonpublications/"><i class="bi bi-instagram"></i>
-										<li class="sj-rss"><a href="https://www.youtube.com/@AristonPublications"><i class="bi bi-youtube"></i></a>
+										<li class="sj-linkedin"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+										<li class="sj-googleplus"><a
+												href="https://www.instagram.com/aristonpublications/"><i
+													class="bi bi-instagram"></i>
+										<li class="sj-rss"><a href="https://www.youtube.com/@AristonPublications"><i
+													class="bi bi-youtube"></i></a>
 										</li>
 									</ul>
 								</div>
@@ -2153,7 +2227,6 @@
 											<li><a href="javascript:void(0);">Careers @ Ariston publication</a></li>
 											<li><a href="javascript:void(0);">Get Help and Support</a></li>
 											<li><a href="javascript:void(0);">Rights &amp; Permissions</a></li>
-											<li class="sj-more"><a href="javascript:void(0);">more</a></li>
 										</ul>
 									</div>
 								</div>
@@ -2169,7 +2242,6 @@
 											<li><a href="javascript:void(0);">Librarians</a></li>
 											<li><a href="javascript:void(0);">Sponsors &amp; Advertisers</a></li>
 											<li><a href="javascript:void(0);">Press &amp; Media</a></li>
-											<li class="sj-more"><a href="javascript:void(0);">more</a></li>
 										</ul>
 									</div>
 								</div>

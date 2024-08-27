@@ -4217,3 +4217,22 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
     justify-content: space-around;
     align-items: center; 
 	}
+
+	#more {
+		display: none;
+	  }
+	  
+	  #readMoreBtn {
+		color: #007bff;
+		cursor: pointer;
+		text-decoration: none;
+	  }
+	  
+	  #readMoreBtn:hover {
+		text-decoration: underline;
+	  }
+
+	  .new__1{
+		font-size: 16px !important;
+		line-height: 20px !important;
+	  }

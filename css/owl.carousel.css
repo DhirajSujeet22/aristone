@@ -53,6 +53,7 @@
 .owl-carousel .owl-item img {
 	width: 100%;
 	display: block;
+	max-height: 260px;
 }
 .owl-carousel .owl-nav.disabled,
 .owl-carousel .owl-dots.disabled {display: none;}

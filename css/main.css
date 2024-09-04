@@ -4214,6 +4214,13 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
   .sj_logo_new {
 	display: none !important;
 }
+.subject-cover-new-box ul li {
+	list-style-type: none;
+  }
+  .font-size-big{
+	font-size: 20px;
+	padding:0.5rem;
+  }
   
 
 
@@ -4244,3 +4251,17 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 	  .color-black{
 		color: black;
 	  }
+	  .new-class-1{
+		background-color: lightgrey;
+		padding: 0.5rem;
+		padding-left: 2px;
+	  }
+	  .new-css-2{
+		color:black;
+		font-weight: 500;
+		line-height: normal;
+	  }
+	
+
+	 
+	

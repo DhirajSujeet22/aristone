@@ -4262,6 +4262,68 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 		line-height: normal;
 	  }
 	
-
-	 
+.sidebar {
+	/* border: 1px solid black; */
+	border-left: 1px solid lightgrey;
+	padding-left: 0.2rem;
 	
+} 
+.sidebar ul li {
+	list-style-type: none;
+	/* border: 1px solid black; */
+	padding: 0.2rem;
+	padding-right: 0rem;
+	color: black;
+	font-weight: 500;
+
+}
+.sidebar ul li a{
+	text-decoration: none;
+	color: black;
+}
+.sidebar ul li a{
+	margin: 0.5rem;
+}
+.sidebar ul li button {
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid lightgrey;
+	margin: 0.5rem;
+	margin-left: 0rem;
+	border-radius: 0.5rem;
+	transition: all 1s ease;
+}
+.sidebar ul li button:hover{
+	background-color: lightgrey;
+}
+.sidebar ul li select{
+	width:100%;
+}
+.all-volume-li{
+	padding: 0.5rem;
+}
+.bottom-sidebar ul li {
+	font-size: 16px;
+}
+.bottom-sidebar .recent-article-box{
+	border: 1px solid lightgrey;
+	text-align: center;
+	padding: 0.8rem 0.2rem;
+	border-radius: 0.5rem;
+	margin: 1rem 0.5rem;
+}
+.bottom-sidebar .recent-article-box p{
+	font-size: 14px;
+	color: black;
+}
+.bottom-sidebar{
+	/* border: 1px solid black; */
+}
+.most-recent a{
+	font-size: 18px;
+	color: white !important;
+}
+.most-recent{
+	background-color: navy;
+	color: white;
+}

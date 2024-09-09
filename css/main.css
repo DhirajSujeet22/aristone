@@ -867,9 +867,9 @@ li.sj-rss a { background:#ff6600; }
 	z-index: 10;
 	background:#fcfcfc;
 	position: relative;
-	border-bottom:1px solid #ddd;
+	/* border-bottom:1px solid #ddd; */
 }
-body.sj-home .sj-header{border:0;}
+body.sj-home .sj-header
 .sj-nav{
 	float: left;
 	text-transform: capitalize;
@@ -4193,7 +4193,7 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 	
 	.sj-navigationarea{
 		padding-top: 0;
-		display: block;
+		/* display: block; */
 	}
 	.sj-logo img{
 		width: 180px !important;

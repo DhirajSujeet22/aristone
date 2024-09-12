@@ -375,6 +375,8 @@ function loadContent(event) {
 	// Construct the path to the HTML file
 	const filePath = `../aristone/chemSubPages/${page}.html`;
 
+	console.log({filePath})
+
 	// Fetch the content from the HTML file
 	fetch(filePath)
 		.then(response => {

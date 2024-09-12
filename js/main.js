@@ -373,7 +373,7 @@ function loadContent(event) {
 	const page = targetLink.getAttribute('href').substring(1);
 
 	// Construct the path to the HTML file
-	const filePath = `../chemSubPages/${page}.html`;
+	const filePath = `../aristone/chemSubPages/${page}.html`;
 
 	// Fetch the content from the HTML file
 	fetch(filePath)

@@ -375,7 +375,7 @@ function loadContent(event) {
 	// Construct the path to the HTML file
 	const filePath = `../aristone/chemSubPages/${page}.html`;
 
-	console.log({filePath})
+	console.log({ filePath })
 
 	// Fetch the content from the HTML file
 	fetch(filePath)
@@ -388,6 +388,8 @@ function loadContent(event) {
 		.then(html => {
 			// Insert the content into the container
 			document.getElementById('contentContainer').innerHTML = html;
+
+
 
 			// Update the page-heading based on the clicked link
 			if (page === 'editorial') {
@@ -461,6 +463,12 @@ function loadContent(event) {
 							
 `;
 			}
+
+			// Scroll to the top of the page
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth' // Smooth scrolling effect
+			});
 		})
 		.catch(error => {
 			console.error('Error loading content:', error);

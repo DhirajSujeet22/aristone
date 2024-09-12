@@ -2087,7 +2087,7 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 	line-height:22px;
 }
 .sj-introduction h4{
-	font-size:30px;
+	font-size:29px;
 	margin:0 0 15px;
 	line-height:33px;
 }
@@ -4265,7 +4265,7 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 	
 .sidebar {
 	/* border: 1px solid black; */
-	border-right: 1px solid lightgrey;
+	/* border-right: 1px solid lightgrey; */
 	padding-right: 0.2rem;
 	background-color: #fcfcfc;
 	
@@ -4305,8 +4305,19 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 .all-volume-li{
 	padding: 0.5rem;
 }
+.bottom-sidebar{
+	border: none;
+	padding-left: 1rem;
+	/* border-left: 1px solid navy; */
+
+
+}
+.bottom-sidebar ul {
+	border: 1px solid lightgrey;
+}
 .bottom-sidebar ul li {
 	font-size: 16px;
+	border: 1px solid lightgrey;
 }
 .bottom-sidebar .recent-article-box{
 	border: 1px solid lightgrey;
@@ -4322,6 +4333,13 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 .bottom-sidebar{
 	/* border: 1px solid black; */
 }
+.leftsidebar{
+	/* border: 1px solid lightgray; */
+}
+.leftsidebar li{
+	border: 1px solid lightgrey;
+}
+
 .most-recent a{
 	font-size: 18px;
 	color: white !important;
@@ -4363,6 +4381,7 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 	padding: 8px;
 	border-bottom: 1px solid #ddd;
 }
+
 
 
 /* article details */
@@ -4474,3 +4493,20 @@ justify-content: start;
 /* .wp-block-image{
 	display: table;
 } */
+
+.journal-text{
+	margin-top: 1rem;
+}
+.current-issue-box{
+	/* border: 1px solid black; */
+	border-top: 1px solid grey;
+	padding: 1rem;
+}
+.author-name a{
+	font-size: 16px;
+}
+.prohress-issue-box{
+	/* border: 1px solid black; */
+	padding: 0;
+}
+

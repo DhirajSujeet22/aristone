@@ -1,0 +1,1215 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppinsa:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+    --wp-primary-color: #03c988;
+    --wp-secondary-color: #0c2183;
+    --wp-tertiary-color: #d2e0fb
+}
+
+html {
+    font-size: 16px
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 13px
+    }
+}
+
+.wp-bg-primary {
+    background-color: var(--wp-primary-color)
+}
+
+.wp-bg-secondary {
+    background-color: var(--wp-secondary-color)
+}
+
+.wp-bg-tertiary {
+    background-color: var(--wp-tertiary-color)
+}
+
+.wp-text-primary {
+    color: var(--wp-primary-color)
+}
+
+.wp-text-secondary {
+    color: var(--wp-secondary-color)
+}
+
+.wp-text-tertiary {
+    color: var(--wp-tertiary-color)
+}
+
+body {
+    /* margin-top: 120px; */
+    overflow-y: scroll;
+    scroll-behavior: smooth
+}
+
+body p {
+    text-align: justify
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        margin-top: 101px
+    }
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+h1,
+h2 {
+    font-family: Gabarito, sans-serif;
+    font-weight: 900
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: Lato, sans-serif;
+    font-weight: 700
+}
+
+.min-height-50 {
+    min-height: 50vh
+}
+
+a {
+    text-decoration: none
+}
+
+#wrapper {
+    overflow-y: scroll;
+    scroll-behavior: smooth
+}
+
+header nav.navbar {
+    background-color: var(--wp-tertiary-color)
+}
+
+@media screen and (min-width: 992px) {
+    header nav.navbar .container-lg {
+        align-items: flex-end
+    }
+}
+
+header nav.navbar .navbar-brand {
+    font-size: 1.3rem
+}
+
+header nav.navbar .navbar-brand .caption,
+header nav.navbar .navbar-brand img {
+    width: 85px
+}
+
+@media screen and (max-width: 576px) {
+
+    header nav.navbar .navbar-brand .caption,
+    header nav.navbar .navbar-brand img {
+        width: 70px
+    }
+}
+
+header nav.navbar .navbar-brand .img-wrapper {
+    float: left
+}
+
+header nav.navbar .navbar-brand .img-wrapper .caption {
+    font-size: .4rem;
+    text-align: center
+}
+
+header nav.navbar .navbar-collapse {
+    flex-direction: column
+}
+
+header nav.navbar .nav-item {
+    padding: 0 .5rem
+}
+
+header nav.navbar .nav-item a.nav-link {
+    color: var(--wp-secondary-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+header nav.navbar .nav-item a.nav-link:hover {
+    background-color: var(--wp-secondary-color);
+    color: #fff;
+    transition: all .5s ease-in-out
+}
+
+@media screen and (max-width: 768px) {
+    header nav.navbar .nav-item a.nav-link {
+        padding-left: .5rem
+    }
+}
+
+.container,
+.container-lg {
+    padding-right: 2rem;
+    padding-left: 2rem
+}
+
+@media screen and (max-width: 768px) {
+
+    .container,
+    .container-lg {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .container,
+    .container-lg {
+        padding-right: 1rem;
+        padding-left: 1rem
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .container,
+    .container-lg {
+        padding-right: 5rem;
+        padding-left: 5rem
+    }
+}
+
+.card.journal-card {
+    border: 4px solid var(--wp-primary-color)
+}
+
+.card.journal-card a {
+    text-decoration: none;
+    color: var(--wp-secondary-color)
+}
+
+.card.journal-card a:hover {
+    color: var(--wp-primary-color)
+}
+
+.submit-article-btn {
+    padding: .8rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 2px solid var(--wp-primary-color)
+}
+
+.submit-article-btn,
+.submit-article-btn:hover {
+    background-color: var(--wp-secondary-color);
+    color: #fff
+}
+
+.not-found .search-form .search-submit {
+    color: var(--wp-secondary-color);
+    border-color: var(--wp-secondary-color)
+}
+
+.entry-title a {
+    color: var(--wp-secondary-color)
+}
+
+.entry-title a:hover {
+    color: var(--wp-primary-color)
+}
+
+.journal-card .img-wrapper {
+    max-width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.journal-card img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.carousel .img-wrapper {
+    max-width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.carousel img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.carousel .carousel-inner {
+    padding: 1em
+}
+
+.carousel .card {
+    margin: 0 .5em;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, .18);
+    font-size: .9em
+}
+
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+    width: 2.2rem;
+    height: 2.2rem;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, .18);
+    background-color: var(--wp-tertiary-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.carousel .carousel-control-next .carousel-control-next-icon,
+.carousel .carousel-control-next .carousel-control-prev-icon,
+.carousel .carousel-control-prev .carousel-control-next-icon,
+.carousel .carousel-control-prev .carousel-control-prev-icon {
+    width: 1.2rem;
+    height: 1.2rem
+}
+
+@media screen and (min-width: 576px) {
+    .carousel .carousel-inner {
+        display: flex
+    }
+
+    .carousel .carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 33.3333333333%
+    }
+}
+
+.backToTopBtn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    font-size: 1.3rem;
+    border: 1px solid #1f1f1f;
+    color: #ccc;
+    border-radius: 100%;
+    transition: .5s;
+    cursor: pointer
+}
+
+.backToTopBtn:not(:hover) {
+    background: #1f1f1f
+}
+
+.backToTopBtn:hover {
+    background: #0f0f0f
+}
+
+.backToTopBtn.active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto
+}
+
+.backToTopBtn:not(.active) {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none
+}
+
+@media screen and (min-width: 1200px) {
+    footer#footer .container-lg {
+        width: 73%;
+        margin: 0 auto
+    }
+}
+
+footer#footer .img-wrapper {
+    float: left
+}
+
+footer#footer .img-wrapper .caption,
+footer#footer .img-wrapper img {
+    width: 60%
+}
+
+@media screen and (min-width: 992px) {
+
+    footer#footer .img-wrapper .caption,
+    footer#footer .img-wrapper img {
+        width: 75%
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    footer#footer .img-wrapper .caption,
+    footer#footer .img-wrapper img {
+        width: 70%
+    }
+}
+
+footer#footer .img-wrapper .caption {
+    font-weight: 700;
+    background: -webkit-linear-gradient(45deg, #eb455f, var(--wp-secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center
+}
+
+@media screen and (max-width: 1400px) {
+    footer#footer .img-wrapper .caption {
+        font-size: .85rem
+    }
+}
+
+footer#footer a {
+    color: #000;
+    font-size: 1.1rem
+}
+
+footer#footer a.email-id,
+footer#footer a:hover {
+    color: var(--wp-secondary-color)
+}
+
+footer#footer .social-media a {
+    font-size: 2.2rem
+}
+
+@media screen and (min-width: 992px) {
+    footer#footer .social-media+p {
+        margin-left: -3rem
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer#footer .social-media {
+        flex-wrap: wrap
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width:576px) {
+    footer#footer .social-media {
+        width: 85%
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer#footer .social-media a:not(:last-child) {
+        padding-right: 1.2rem
+    }
+}
+
+@media screen and (min-width: 992px) {
+    footer#footer .social-media {
+        text-align: right;
+        margin-left: auto;
+        margin-right: 0;
+        flex-wrap: wrap;
+        justify-content: flex-end
+    }
+
+    footer#footer .social-media a {
+        padding-left: 1.2rem
+    }
+}
+
+@media screen and (min-width: 992px) {
+    footer#footer .social-media {
+        width: 90%
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    footer#footer .social-media a {
+        padding-left: 1.5rem
+    }
+}
+
+.sample-letter {
+    margin-top: 1.5rem
+}
+
+@media screen and (min-width: 1200px) {
+    .sample-letter {
+        width: 80%;
+        margin-inline: auto
+    }
+}
+
+.single-post .container .submit-article-btn {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: .8rem 1rem
+}
+
+.single-post .entry-title a {
+    color: var(--wp-secondary-color)
+}
+
+.cover-image-wrapper {
+    width: 8.5rem
+}
+
+.d-flex {
+    width: 90%;
+}
+
+.single-post .article-header .cover-image-wrapper {
+    width: 8.5rem !important
+}
+
+@media screen and (min-width: 1200px) {
+    .single-post .article-header .cover-image-wrapper {
+        width: 7rem !important
+    }
+}
+
+.single-post .article-header .d-flex {
+    width: 90% !important
+}
+
+.single-post .article-header .d-flex div {
+    padding: .3rem 0 !important
+}
+
+.d-flex div h3 {
+    font-size: 1.5rem;
+}
+.d-flex div p{
+    font-size: 1.5rem;
+}
+
+.single-post .article-header .d-flex div p {
+    font-size: 1.5rem
+}
+
+.single-post .article-header .d-flex div h3 {
+    font-size: 2.2rem
+}
+
+.single-post .article-header .d-flex h4 {
+    padding-top: .5rem
+}
+
+@media screen and (min-width: 768px) {
+    .single-post .article-header .d-flex div {
+        padding: .3rem 0
+    }
+
+    .single-post .article-header .d-flex h3 {
+        font-size: 2.5rem
+    }
+}
+
+.single-post .author a {
+    color: var(--wp-tertiary-color)
+}
+
+@media screen and (min-width: 768px) {
+    .single-post .nav.nav-underline {
+        padding-top: 1.75rem
+    }
+}
+
+.single-post .nav.nav-underline .nav-item .nav-link {
+    color: #000
+}
+
+@media screen and (min-width: 768px) {
+    .single-post #authors-and-affiliations {
+        font-size: .9rem
+    }
+}
+
+.single-post #authors-and-affiliations .authors_aff p {
+    text-align: left
+}
+
+.single-post .article-info {
+    padding-top: 1rem;
+    border-top: 1px solid #e1e1e1
+}
+
+.single-post .article-info p {
+    margin-bottom: .3rem;
+    text-align: left
+}
+
+@media screen and (min-width: 768px) {
+    .single-post .affiliations {
+        border-left: 1px solid #e1e1e1;
+        padding-left: 1rem
+    }
+}
+
+.single-post .right-sidebar {
+    background-color: #f8f8ff;
+    padding: 0 1rem 1rem
+}
+
+.single-post .right-sidebar .link {
+    word-wrap: break-word
+}
+
+.single-post .sfsi_widget.sfsi_shortcode_container {
+    background-color: #f8f8ff;
+    float: none
+}
+
+.hero-section img {
+    margin: 0 auto
+}
+
+@media screen and (max-width: 992px) {
+    .hero-section img {
+        width: 70%
+    }
+}
+
+.hero-section .hero-title {
+    padding-left: 1rem
+}
+
+@media screen and (min-width: 576px) {
+    .hero-section .hero-title {
+        border-left: 7px solid var(--wp-primary-color)
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero-section .hero-title {
+        font-size: 1.7rem
+    }
+}
+
+.hero-section ul {
+    margin-left: 0;
+    padding-left: 0
+}
+
+.hero-section ul li {
+    list-style: none;
+    font-size: 1.3rem
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        text-align: center
+    }
+}
+
+.all-journals-page .card-row,
+.browse-journals .card-row {
+    padding: 3.5rem 0
+}
+
+.all-journals-page a,
+.browse-journals a {
+    text-decoration: none;
+    color: var(--wp-secondary-color)
+}
+
+.all-journals-page .journal-category,
+.browse-journals .journal-category {
+    height: 13rem;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 700
+}
+
+.all-journals-page.books .journal-category,
+.browse-journals.books .journal-category {
+    background: url(https://aristonpubs.com/wp-content/uploads/2024/04/books-stack.jpg) bottom no-repeat;
+    background-size: 100% 75%
+}
+
+.browse-journals.journal .card-row {
+    padding: 3rem 0
+}
+
+.browse-journals.journal .journal-category {
+    height: 100%;
+    background: none
+}
+
+.browse-journals.journal .journal-category img {
+    max-width: 90%;
+    max-height: 100%
+}
+
+.about-us h2 {
+    font-weight: 900;
+    font-size: 1.7rem
+}
+
+@media screen and (max-width: 576px) {
+    .about-us h2 {
+        font-size: 2.3rem
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-us h2 {
+        font-size: 2.7rem
+    }
+}
+
+.about-us p {
+    font-size: 1.1rem
+}
+
+@media screen and (max-width: 576px) {
+    .about-us {
+        text-align: center
+    }
+}
+
+.about-us img {
+    width: 100%
+}
+
+.category-page {
+    position: relative;
+    min-height: calc(100vh - 72px)
+}
+
+.category-page .navbar .container-fluid .navbar-collapse {
+    height: 100%;
+    background-color: var(--wp-secondary-color)
+}
+
+.category-page .navbar .container-fluid {
+    height: 100%
+}
+
+.category-page .navbar {
+    width: 50%;
+    height: 100%;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    overflow-y: scroll;
+    z-index: 1;
+    scrollbar-width: none
+}
+
+.category-page .navbar::-webkit-scrollbar {
+    display: none
+}
+
+.category-page .navbar .navbar-brand {
+    margin-left: .5rem
+}
+
+.category-page .navbar .container-fluid {
+    padding: 0
+}
+
+.category-page .navbar .navbar-nav .nav-item,
+.category-page .navbar .navbar-nav .nav-link {
+    color: #fff;
+    padding-left: .5rem;
+    background-color: var(--wp-secondary-color)
+}
+
+.category-page .navbar .navbar-brand {
+    font-size: 1.5em;
+    font-weight: 700
+}
+
+.category-page .navbar .dropdown .nav-link {
+    white-space: normal
+}
+
+.category-page .navbar .dropdown-menu.show {
+    position: static
+}
+
+.category-page .navbar-collapse,
+.category-page .navbar-collapse .navbar-nav {
+    width: 100%
+}
+
+.category-page .navbar-collapse .navbar-nav:last-child {
+    padding-bottom: 1rem;
+    background-color: var(--wp-secondary-color);
+    border-top: 1px solid var(--wp-primary-color)
+}
+
+.category-page .navbar-collapse .navbar-nav.static-links .second-cat-left-link {
+    padding: .5rem 1rem .2rem
+}
+
+.category-page .navbar-collapse .navbar-nav.static-links ul {
+    padding-left: 3rem;
+    color: #fff;
+    list-style: square
+}
+
+.category-page .navbar-collapse .navbar-nav.static-links ul li .nav-link {
+    padding-top: 0
+}
+
+.category-page .navbar-collapse .navbar-nav.static-links .nav-item:not(.second-cat-left-link) {
+    border-bottom: 1px solid var(--wp-primary-color)
+}
+
+.category-page .navbar-collapse .navbar-nav .vol .nav-link {
+    color: var(--wp-primary-color);
+    font-weight: 700;
+    font-style: italic
+}
+
+.category-page .navbar-collapse .navbar-nav:not(:first-child) .nav-item {
+    border-bottom: 1px solid var(--wp-primary-color)
+}
+
+.category-page .navbar-collapse .navbar-nav .nav-item {
+    width: 100%
+}
+
+.category-page .navbar-collapse .navbar-nav .nav-item a {
+    color: #fff
+}
+
+.category-page .navbar-collapse .navbar-nav .nav-item a.nav-link:hover {
+    color: var(--wp-primary-color)
+}
+
+.category-page .navbar-collapse .browse-journals-dropdown {
+    padding-left: calc(1rem + .5vw);
+    padding-right: calc(1rem + .5vw)
+}
+
+@media screen and (max-width: 1024px) {
+    .category-page .navbar-collapse .browse-journals-dropdown h4 {
+        font-size: 1.2rem
+    }
+}
+
+.category-page .navbar-collapse .browse-journals-dropdown #go-to-issue-page {
+    margin-bottom: .2rem
+}
+
+@media screen and (min-width: 576px) {
+    .category-page .navbar {
+        width: 18%
+    }
+
+    .category-page .articles-section {
+        margin-left: 18%
+    }
+
+    .category-page .navbar-expand-sm .navbar-collapse,
+    .category-page .navbar-expand-sm .navbar-nav,
+    .category-page .navbar .container-fluid {
+        flex-direction: column;
+        align-items: flex-start
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .category-page .articles-section {
+        margin-right: 18%
+    }
+
+    .category-page .right-side-nav {
+        width: 18%
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width:991px) {
+    .category-page .navbar {
+        width: 25%
+    }
+
+    .category-page .articles-section {
+        margin-left: 25%;
+        margin-right: 25%
+    }
+
+    .category-page .right-side-nav {
+        width: 25%
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .category-page .navbar-expand-sm .navbar-collapse,
+    .category-page .navbar-expand-sm .navbar-nav,
+    .category-page .navbar .container-fluid {
+        align-items: flex-start
+    }
+
+    .category-page .navbar-toggler[aria-expanded=true] {
+        display: block;
+        position: absolute;
+        right: 0
+    }
+}
+
+.category-page .articles-section .category-content {
+    display: none
+}
+
+.category-page .articles-section .category-content h1 {
+    font-size: 2.5rem
+}
+
+@media screen and (max-width: 576px) {
+    .category-page .articles-section .category-content h1 {
+        text-align: center;
+        font-size: 3rem
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .category-page .articles-section .category-content h1 {
+        font-size: 3.5rem;
+        padding-bottom: 0;
+        margin-bottom: 0
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .category-page .articles-section .category-content .journal-cover-wrapper {
+        text-align: center
+    }
+}
+
+.category-page .articles-section .category-content .journal-cover-wrapper .journal-cover-img {
+    padding-top: .4rem
+}
+
+@media screen and (max-width: 992px) {
+    .category-page .articles-section .category-content .journal-cover-wrapper .journal-cover-img {
+        max-width: 65%;
+        padding: 1rem
+    }
+}
+
+.category-page .articles-section .full-width-journal-card {
+    margin: .7rem 0;
+    border: 1px solid var(--wp-tertiary-color)
+}
+
+.category-page .articles-section .full-width-journal-card h5 a {
+    color: var(--wp-secondary-color)
+}
+
+.category-page .articles-section .full-width-journal-card .img-wrapper {
+    max-width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media screen and (min-width: 992px) {
+    .category-page .articles-section .full-width-journal-card .img-wrapper {
+        height: 15rem
+    }
+}
+
+.category-page .articles-section .full-width-journal-card .img-wrapper img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.category-page .articles-section #article-in-press,
+.category-page .articles-section #article-processing-charges,
+.category-page .articles-section #conferences,
+.category-page .articles-section #current-issue,
+.category-page .articles-section #editorial-board,
+.category-page .articles-section #guide-for-reviewers-and-editors,
+.category-page .articles-section #guide-to-authors,
+.category-page .articles-section #indexing-and-abstracting,
+.category-page .articles-section #manuscript-template,
+.category-page .articles-section #publication-ethics,
+.category-page .articles-section #special-issues,
+.category-page .articles-section .about-main-category>div {
+    display: none
+}
+
+.category-page .articles-section #guide-to-authors li .s5,
+.category-page .articles-section #guide-to-authors p.p7,
+.category-page .articles-section #guide-to-authors p.p12 {
+    color: var(--wp-secondary-color)
+}
+
+.category-page .articles-section #editorial-board p {
+    margin-bottom: 0
+}
+
+.category-page .articles-section .right-side-nav {
+    background-color: var(--wp-secondary-color)
+}
+
+@media screen and (max-width: 767px) {
+    .category-page .articles-section .right-side-nav {
+        padding-bottom: .5rem;
+        margin-top: 1.2rem
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .category-page .articles-section .right-side-nav {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow-y: scroll;
+        z-index: 1;
+        scrollbar-width: none
+    }
+
+    .category-page .articles-section .right-side-nav::-webkit-scrollbar {
+        display: none
+    }
+}
+
+.category-page .articles-section .right-side-nav ul {
+    padding-left: 0
+}
+
+.category-page .articles-section .right-side-nav ul li {
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    list-style: none;
+    color: #fff;
+    padding: .5rem 1rem;
+    text-align: center
+}
+
+@media screen and (min-width: 1300px) {
+    .category-page .articles-section .right-side-nav ul li {
+        font-size: 1.2rem
+    }
+}
+
+.category-page .articles-section .right-side-nav ul li:hover {
+    color: var(--wp-primary-color)
+}
+
+.category-page .articles-section .right-side-nav .most-recent h4 {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    color: #fff
+}
+
+@media screen and (min-width: 1300px) {
+    .category-page .articles-section .right-side-nav .most-recent h4 {
+        font-size: 1.25rem
+    }
+}
+
+.category-page .articles-section .right-side-nav .most-recent .card {
+    margin: 1rem;
+    color: #fff;
+    background-color: var(--wp-secondary-color);
+    border: 1px solid var(--wp-primary-color)
+}
+
+.category-page .articles-section .right-side-nav .most-recent .card .img-wrapper {
+    height: 6rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.category-page .articles-section .right-side-nav .most-recent .card .img-wrapper img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.category-page .articles-section .right-side-nav .most-recent .card .card-body {
+    padding: .5rem
+}
+
+.category-page .articles-section .right-side-nav .most-recent .card .card-body h5 {
+    font-size: 1rem
+}
+
+.category-page .articles-section .right-side-nav .most-recent .card .card-body h5 a {
+    color: #fff
+}
+
+.category-page .articles-section .right-side-nav .most-recent .card .card-body h5 a:hover {
+    color: var(--wp-primary-color)
+}
+
+.category-page .articles-section .right-side-nav .most-recent .card .card-body .entry-date {
+    color: #ccc;
+    font-size: .9rem
+}
+
+.ariston-form,
+.journal-form,
+.recommend-to-librarian,
+.submit-article {
+    margin: 2rem 0
+}
+
+.ariston-form:not(.journal-form),
+.journal-form:not(.journal-form),
+.recommend-to-librarian:not(.journal-form),
+.submit-article:not(.journal-form) {
+    max-width: 750px
+}
+
+.ariston-form label,
+.journal-form label,
+.recommend-to-librarian label,
+.submit-article label {
+    font-weight: 700;
+    width: 100%
+}
+
+.ariston-form input:not([type=file]),
+.ariston-form select,
+.ariston-form textarea,
+.journal-form input:not([type=file]),
+.journal-form select,
+.journal-form textarea,
+.recommend-to-librarian input:not([type=file]),
+.recommend-to-librarian select,
+.recommend-to-librarian textarea,
+.submit-article input:not([type=file]),
+.submit-article select,
+.submit-article textarea {
+    margin-top: .3rem;
+    width: 100%;
+    border: 1px solid grey
+}
+
+.ariston-form .form-select,
+.ariston-form input,
+.journal-form .form-select,
+.journal-form input,
+.recommend-to-librarian .form-select,
+.recommend-to-librarian input,
+.submit-article .form-select,
+.submit-article input {
+    height: 3rem;
+    border-radius: 0;
+    box-shadow: none
+}
+
+.ariston-form textarea,
+.journal-form textarea,
+.recommend-to-librarian textarea,
+.submit-article textarea {
+    height: 5rem
+}
+
+.ariston-form input[type=submit],
+.journal-form input[type=submit],
+.recommend-to-librarian input[type=submit],
+.submit-article input[type=submit] {
+    background-color: var(--wp-secondary-color);
+    color: #fff;
+    box-shadow: none;
+    border: 1px solid var(--wp-secondary-color);
+    font-size: 1.1rem
+}
+
+.ariston-form input[type=submit]:hover,
+.journal-form input[type=submit]:hover,
+.recommend-to-librarian input[type=submit]:hover,
+.submit-article input[type=submit]:hover {
+    color: var(--wp-primary-color)
+}
+
+.ariston-form p:last-of-type,
+.journal-form p:last-of-type,
+.recommend-to-librarian p:last-of-type,
+.submit-article p:last-of-type {
+    margin-bottom: 0
+}
+
+.type-page h1 {
+    color: var(--wp-secondary-color);
+    text-align: center
+}
+
+.tag .full-width-journal-card {
+    padding: .5rem;
+    margin: .7rem 0;
+    flex-direction: column-reverse;
+    border: 1px solid var(--wp-tertiary-color)
+}
+
+@media screen and (min-width: 768px) {
+    .tag .full-width-journal-card {
+        flex-direction: row-reverse
+    }
+}
+
+.tag .full-width-journal-card .card-body {
+    padding: 1rem .5rem
+}
+
+@media screen and (min-width: 768px) {
+    .tag .full-width-journal-card .card-body {
+        width: 65%
+    }
+}
+
+.tag .full-width-journal-card .card-body h5 a {
+    color: var(--wp-secondary-color)
+}
+
+.tag .full-width-journal-card .img-wrapper {
+    max-width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media screen and (min-width: 992px) {
+    .tag .full-width-journal-card .img-wrapper {
+        height: 15rem
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tag .full-width-journal-card .img-wrapper {
+        width: 35%;
+        justify-content: flex-end
+    }
+}
+
+.tag .full-width-journal-card .img-wrapper img {
+    max-width: 100%;
+    max-height: 100%
+}

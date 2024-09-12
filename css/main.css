@@ -4383,3 +4383,15 @@ body.sj-userlogin .sj-topbar .sj-languages{margin:4px 0;}
 .journal-text{
 	margin-top: 1rem;
 }
+.current-issue-box{
+	/* border: 1px solid black; */
+	border-top: 1px solid grey;
+	padding: 1rem;
+}
+.author-name a{
+	font-size: 16px;
+}
+.prohress-issue-box{
+	/* border: 1px solid black; */
+	padding: 0;
+}

@@ -4494,6 +4494,28 @@ justify-content: start;
 	display: table;
 } */
 
+/* article details */
+
+/* chemsci */
+
+.sidebar-menu{
+	list-style-type: disc !important ;
+	list-style:  disc !important;
+}
+
+.aboutSubmenu{
+	padding-left: 20px;
+}
+
+
+@media screen and (min-width: 1200px) {
+	.aboutSubmenu{
+		padding-left: 30px;
+	}
+}
+
+/* chemsci */
+
 .journal-text{
 	margin-top: 1rem;
 }

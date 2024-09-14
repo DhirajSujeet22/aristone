@@ -4531,4 +4531,34 @@ justify-content: start;
 	/* border: 1px solid black; */
 	padding: 0;
 }
+.from-the-journal-box-main{
+	display: flex;
+	padding: 1rem 0.2rem;
+	border-radius: 1rem;
+}
+.text-box{
+	width: 100%;
+	padding: 2.5rem 1rem;
+	background-color:#636c77;
+	color: white;
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+.text-box p{
+	margin-bottom: 5px;
+}
+.text-box .text-box-p1{
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.text-box h3{
+	font-size: 2rem;
+	padding: 0.5rem 0rem;
+	color: white;
+}
+.article-individual-page-subjeading h2{
+	font-weight: 600;
+	padding-right: 0.5rem;
+	color: black;
+}
 

@@ -6,3 +6,58 @@
         width: auto;
     }
 }
+.author-affiliciation{
+    padding: 1rem;
+    padding-left: 0;
+    p{
+       
+        padding: 0.5rem;
+        padding-top: 1.5rem;
+        font-weight: 500;
+    }
+    ul{
+        display: flex;
+        gap: 2rem;
+        border-bottom: 1px solid lightgrey;
+       li{
+         list-style-type: none;
+         font-size: 18px;
+         font-weight: 500;
+         transition: all 1s ease;
+         padding: 0 0.5rem;
+         border-bottom: 1px solid white;
+         &:hover{
+            border-bottom: 1px solid black;
+         }
+       }
+    }
+}
+.article-information-rightside{
+    padding: 3rem 1rem;
+    padding-left: 1rem;
+    background-color: rgba(0, 0, 0, 0.018);
+    border-radius: 1rem;
+    ul{
+        li{
+            list-style-type: none;
+            padding: 0.3rem 0;
+            button{
+                border-radius: 0.5rem;
+                width: 100%;
+                border: 5px solid lightgrey;
+            }
+            h5{ text-align: center;
+                padding: 0.3rem 0;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+            
+                i{
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                    color: #007bff;
+                
+            }
+        }
+    }
+}

@@ -133,9 +133,8 @@
 									<strong class="sj-logo sj_logo_new"><a href="#"><img
 												src="images/Ariston-Publications-logo (1).webp" alt="company logo here"
 												style="width: 50px;"></a></strong>
-									<strong class="sj-logo"><a href="index.html"><img
-												src="images/small-width_logo.png" alt="company logo here"
-												style="width: 50px;"></a></strong>
+									<strong class="sj-logo"><a href="index.html"><img src="images/small-width_logo.png"
+												alt="company logo here" style="width: 50px;"></a></strong>
 								</div>
 								<div class="sj-rightarea">
 									<nav id="sj-nav" class="sj-nav navbar-expand-lg">
@@ -176,7 +175,7 @@
 													<a href="#">Books </a>
 
 												</li>
-												
+
 
 												<li class="menu-item-has-children page_item_has_children">
 
@@ -192,7 +191,7 @@
 													<a href="javascript:void(0);">More </a>
 													<ul class="sub-menu">
 
-													
+
 														<li class="menu-item-has-children page_item_has_children">
 															<a href="javascript:void(0);">Manage User</a>
 															<ul class="sub-menu">
@@ -249,7 +248,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-							<div class="sj-innerbannercontent">
+							<div class=" page-heading sj-innerbannercontent">
 								<h1>Mathsci Express</h1>
 								<ol class="sj-breadcrumb">
 									<li><a href="#">Home</a></li>
@@ -271,34 +270,65 @@
 				<div id="sj-twocolumns" class="sj-twocolumns">
 					<div class="container">
 						<div class="row">
-							
+
 							<div class="col-12 col-sm-12 col-md-3 col-lg-3 p-0">
 								<aside id="sj-sidebar" class="sj-sidebar">
 									<div class="sj-widget sj-widgetimpactfector sidebar leftsidebar">
 										<ul>
 											<li><a href="mathsci.html">Mathsci Express - Home</a></li>
-											<li><a href="#about">About Mathsci Express</a></li>
-											<li><a href="editorailboard.html">Editorial Board</a></li>
-											<li><a href="authorguideline.html">Guide to Authors</a></li>
-											<li><a href="reviewer-guide.html">Guide for Reviewers and Editors</a></li>
-											<li><a href="publication-Ethics.html">Publication Ethics</a></li>
-											<li><a href="abstracting.html">Indexing and Abstracting</a></li>
-											<li><a href="articleprocess.html">Article Processing Charges</a></li>
+											<li><a id="aboutLink">About Mathsci Express</a>
+												<i class="bi bi-caret-down-fill"></i>
+												<ul id="aboutSubmenu" class="aboutSubmenu submenu border border-0 pl-5"
+													data-bs-popper="static" style="display: none;">
+													<li class="sidebar-menu border border-0">
+														<a id="math-aims-and-scope" class="m-0 p-0 nav-link"
+															href="#math-aims-and-scope">Aims and Scope</a>
+													</li>
+													<li class="sidebar-menu border border-0">
+														<a id="math-authors-benefits" class="m-0 p-0 nav-link"
+															href="#math-authors-benefits">Authors Benefits</a>
+													</li>
+													<li class="sidebar-menu border border-0">
+														<a id="math-subjects-covered" class="m-0 p-0 nav-link"
+															href="#math-subjects-covered">Subjects Covered</a>
+													</li>
+													<li class="sidebar-menu border border-0">
+														<a id="math-readership" class="m-0 p-0 nav-link"
+															href="#math-readership">Readership</a>
+													</li>
+												</ul>
+											</li>
+
+											<li><a id="math-editorialLink" href="#math-editorial">Editorial Board</a>
+											</li>
+											<li><a id="math-guideToAuthor" href="#math-guideToAuthor">Guide to
+													Authors</a></li>
+											<li><a id="math-guideForReviewersLink" href="#math-guideForReviewers">Guide
+													for Reviewers and Editors</a></li>
+											<li><a id="math-publicationEthics"
+													href="#math-publicationEthics">Publication Ethics</a></li>
+											<li><a id="math-indexing-and-abstracting"
+													href="#math-indexing-and-abstracting">Indexing and Abstracting</a>
+											</li>
+											<li><a id="math-article-processing-charges"
+													href="#math-article-processing-charges">Article Processing
+													Charges</a></li>
 											<li><a href="recommand-library.html">Recommend to Library</a></li>
 											<li><a href="#manuscript-template">Manuscript Template</a></li>
-											<li><a href="specail-issue.html">Special Issues</a></li>
-											<li><a href="confrence.html">Conferences</a></li>
+											<li><a id="math-special-issues" href="#math-special-issues">Special
+													Issues</a></li>
+											<li><a id="math-conferences" href="#math-conferences">Conferences</a></li>
 											<li><a href="contactus.html">Contact Us</a></li>
 											<li><a href="#">Journal Browsers</a></li>
 											<li>
 												<a href="#volume-search">
 													<select name="Journals " id="Journals ">
-														
+
 														<option value="Volume">Volume</option>
 														<option value="Volume 1">Volumne 1</option>
-														
-														
-													  </select>
+
+
+													</select>
 												</a>
 											</li>
 											<li>
@@ -310,9 +340,9 @@
 														<option value="volvo">Issue 3 (September 2024) </option>
 														<option value="volvo">Issue 2 (June 2024)</option>
 														<option value="volvo">Issue 1 (March 2024)</option>
-														
-														
-													  </select>
+
+
+													</select>
 												</a>
 											</li>
 											<li>
@@ -321,18 +351,22 @@
 												</a>
 											</li>
 											<li><a href="#article-in-press">Article in Press</a></li>
-											<li><a href="current-issue.html">Current Issue</a></li>
+											<li><a id="math-current-issue" href="#math-current-issue">Current Issue</a></li>
 											<li><a href="#all-volumes">All Volumes</a></li>
-											<li class="all-volume-li"><a href="#volume-1-issue-3">Volume 1, Issue 4 (December 2024)</a></li>
-											<li class="all-volume-li"><a href="#volume-1-issue-2">Volume 1, Issue 3 (September 2024)</a></li>
-											<li class="all-volume-li"><a href="#volume-1-issue-1">Volume 1, Issue 2 (June 2024)</a></li>
-											<li class="all-volume-li"><a href="#volume-1-issue-1">Volume 1, Issue 1 (March 2024)</a></li>
+											<li class="all-volume-li"><a href="#volume-1-issue-3">Volume 1, Issue 4
+													(December 2024)</a></li>
+											<li class="all-volume-li"><a href="#volume-1-issue-2">Volume 1, Issue 3
+													(September 2024)</a></li>
+											<li class="all-volume-li"><a href="#volume-1-issue-1">Volume 1, Issue 2
+													(June 2024)</a></li>
+											<li class="all-volume-li"><a href="#volume-1-issue-1">Volume 1, Issue 1
+													(March 2024)</a></li>
 										</ul>
 									</div>
-									
+
 								</aside>
 							</div>
-							<div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
+							<div id="contentContainer" class="col-12 col-sm-12 col-md-6 col-lg-6 ">
 								<div id="sj-content" class="sj-content">
 									<div class="sj-newsdetail">
 										<div class="sj-head">
@@ -370,10 +404,25 @@
 											</ul>
 										</div>
 										<div class="sj-description">
-											<p style="color: black;">Welcome to MatSci Express (MSE), a premier journal committed to the rapid dissemination of groundbreaking research in the dynamic field of materials science. Our mission is to provide a robust platform for scientists, scholars, and researchers to showcase their cutting-edge discoveries and advancements. MatSci Express (MSE) stands at the forefront of interdisciplinary collaboration, bringing together experts from various fields including science, engineering, and medicine. We publish original research articles, comprehensive reviews, and insightful communications, fostering collaboration and knowledge exchange across diverse disciplines. By uniting the expertise of materials scientists, physicists, engineers, ceramicists, chemists, metallurgists, theoreticians, biologists, medical scientists, and technocrats, we aim to foster collaboration and innovation across diverse disciplines. With a focus on both fundamental principles and practical applications, MSE explores the latest frontiers of advanced materials, driving innovation and progress in the field.</p>
+											<p style="color: black;">Welcome to MatSci Express (MSE), a premier journal
+												committed to the rapid dissemination of groundbreaking research in the
+												dynamic field of materials science. Our mission is to provide a robust
+												platform for scientists, scholars, and researchers to showcase their
+												cutting-edge discoveries and advancements. MatSci Express (MSE) stands
+												at the forefront of interdisciplinary collaboration, bringing together
+												experts from various fields including science, engineering, and
+												medicine. We publish original research articles, comprehensive reviews,
+												and insightful communications, fostering collaboration and knowledge
+												exchange across diverse disciplines. By uniting the expertise of
+												materials scientists, physicists, engineers, ceramicists, chemists,
+												metallurgists, theoreticians, biologists, medical scientists, and
+												technocrats, we aim to foster collaboration and innovation across
+												diverse disciplines. With a focus on both fundamental principles and
+												practical applications, MSE explores the latest frontiers of advanced
+												materials, driving innovation and progress in the field.</p>
 										</div>
 									</div>
-									
+
 									<!-- volumne 1 issue 3  -->
 									<div class="sj-author">
 										<div class="volume-heading">
@@ -390,8 +439,8 @@
 										<div class="sj-authorcontent">
 											<div class="sj-authorhead">
 												<div class="sj-leftarea">
-												<!-- editorail section  -->
-									
+													<!-- editorail section  -->
+
 													<div class="sj-authorname m-2 ml-0">
 														<h3>Graphene Oxide and Based Materials: Synthesis, Properties,
 															and Applications – A Comprehensive Review </h3>
@@ -434,14 +483,14 @@
 									<div class="sj-author">
 										<div class="volume-heading">
 											<h3 class="text-center">
-												Research Article 
+												Research Article
 											</h3>
-	
+
 										</div>
 										<div class="sj-authorcontent">
 											<div class="sj-authorhead">
 												<div class="sj-leftarea">
-													
+
 													<div class="sj-authorname m-2 ml-0">
 														<h3>Plant Mediated Synthesis of ZnO Nanoparticles Using Butea
 															monosperma Plant Extract and Their Antibacterial
@@ -688,7 +737,7 @@
 									</div>
 									<!-- seventh section  -->
 									<div class="sj-author">
-									
+
 										<div class="sj-authorcontent">
 											<div class="sj-authorhead">
 												<div class="sj-leftarea">
@@ -1026,9 +1075,9 @@
 									<div class="sj-author">
 										<div class="volume-heading">
 											<h3 class="text-center">
-												Research Article 
+												Research Article
 											</h3>
-	
+
 										</div>
 										<div class="sj-authorcontent">
 											<div class="sj-authorhead">
@@ -1419,10 +1468,10 @@
 										</div>
 									</div>
 									<!-- review heading  -->
-									
+
 									<div class="volume-heading">
 										<h3 class="text-center">
-											Research Article 
+											Research Article
 										</h3>
 
 									</div>
@@ -1692,7 +1741,7 @@
 										</form>
 									</div>
 								</div>
-							</div> 
+							</div>
 							<div class="col-12 col-sm-12 col-md-3 col-lg-3">
 								<div class="sj-widget sj-widgetnoticeboard">
 									<div class="sidebar bottom-sidebar">
@@ -1703,27 +1752,35 @@
 											<li class="most-recent"><a href="#">Most Recent Article </a>
 											</li>
 											<div class="recent-article-box">
-													<img src="images/ariston publication img/image-5.png" alt="recent-article img" width="200">
+												<img src="images/ariston publication img/image-5.png"
+													alt="recent-article img" width="200">
 												<p>Magnetoexciton in the Ellipsoidal Quantum Dots</p>
 											</div>
 											<div class="recent-article-box">
-													<img src="images/ariston publication img/image-4.png" alt="recent-article img" width="200">
-												<p>Development and Modelling of a Photonic Crystal Fiber Sensor for Detecting Harmful Chemicals in Polycarbonate Plastics</p>
+												<img src="images/ariston publication img/image-4.png"
+													alt="recent-article img" width="200">
+												<p>Development and Modelling of a Photonic Crystal Fiber Sensor for
+													Detecting Harmful Chemicals in Polycarbonate Plastics</p>
 											</div>
 											<div class="recent-article-box">
-													<img src="images/ariston publication img/image-29.png" width="200">
-												<p>First principle investigation of Sr and Eu doped La2NiMnO6: Structural, Electronic, Optical, Magnetic, and Spintronics properties</p>
+												<img src="images/ariston publication img/image-29.png" width="200">
+												<p>First principle investigation of Sr and Eu doped La2NiMnO6:
+													Structural, Electronic, Optical, Magnetic, and Spintronics
+													properties</p>
 											</div>
 											<div class="recent-article-box">
-													<img src="images/ariston publication img/image-25.png" width="100">
-												<p>Plant Mediated Synthesis of ZnO Nanoparticles Using Butea monosperma Plant Extract and Their Antibacterial Applications  </p>
+												<img src="images/ariston publication img/image-25.png" width="100">
+												<p>Plant Mediated Synthesis of ZnO Nanoparticles Using Butea monosperma
+													Plant Extract and Their Antibacterial Applications </p>
 											</div>
 											<div class="recent-article-box">
-													<img src="images/ariston publication img/Graphical-Abstract-1.jpg" alt="recent-article img" width="100">
-												<p>Graphene Oxide and Based Materials: Synthesis, Properties, and Applications – A Comprehensive Review  
+												<img src="images/ariston publication img/Graphical-Abstract-1.jpg"
+													alt="recent-article img" width="100">
+												<p>Graphene Oxide and Based Materials: Synthesis, Properties, and
+													Applications – A Comprehensive Review
 												</p>
 											</div>
-												
+
 										</ul>
 									</div>
 								</div>
@@ -1778,7 +1835,7 @@
 									<div class="sj-widgetcontent">
 										<ul>
 											<li><a href="contactus.html">Journals </a></li>
-										
+
 											<li><a href="career.html">Books </a></li>
 											<li><a href="#">Ethical Guidelines</a></li>
 											<li><a href="#">Authors Guidelines</a></li>
@@ -1795,7 +1852,7 @@
 										<ul>
 											<li><a href="javascript:void(0);">Submit Manuscript</a></li>
 											<li><a href="javascript:void(0);">Propose a Journal
-											</a></li>
+												</a></li>
 											<li><a href="javascript:void(0);">Publish a Book</a></li>
 											<li><a href="contactus.html">Contact Us</a></li>
 										</ul>
@@ -1818,7 +1875,8 @@
 											<li><a href="tel:(+4)6146345305"><i class="lnr lnr-screen"></i><span>
 														6146345305</span></a></li>
 											<li><a href="mailto:info@aristonpubs.com"><i
-														class="lnr lnr-envelope"></i><span> <b>Email :-</b>info@aristonpubs.com
+														class="lnr lnr-envelope"></i><span> <b>Email
+															:-</b>info@aristonpubs.com
 													</span></a>
 											</li>
 										</ul>

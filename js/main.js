@@ -365,117 +365,118 @@ jQuery(document).on('ready', function () {
 
 
 function loadContent(event) {
-
 	// Get the target element (clicked link)
 	const targetLink = event.target;
 
-	// Extract the href value and remove the leading '#' to get the target page
-	const page = targetLink.getAttribute('href').substring(1);
+	// Extract the href value
+	const hrefValue = targetLink.getAttribute('href');
 
-	// Construct the path to the HTML file
-	const filePath = `../aristone/chemSubPages/${page}.html`;
+	// Check if the href starts with '#' to prevent default behavior for internal links
+	if (hrefValue && hrefValue.startsWith('#')) {
+		event.preventDefault();  // Prevent the default scroll behavior
 
-	console.log({ filePath })
+		// Get the target page (removing the leading '#')
+		// Remove the leading '#' and split the href value by the first hyphen
+		const [folder, ...pageParts] = hrefValue.substring(1).split('-');
 
-	// Fetch the content from the HTML file
-	fetch(filePath)
-		.then(response => {
-			if (!response.ok) {
-				throw new Error('Failed to load content');
-			}
-			return response.text();
-		})
-		.then(html => {
-			// Insert the content into the container
-			document.getElementById('contentContainer').innerHTML = html;
+		// Rejoin the remaining parts of the array to get the full page name
+		const page = pageParts.join('-');
 
+		// Determine the folder based on the identifier
+		const folderName = folder === 'chem' ? "chemSubPages" : folder === 'math' ? "mathSubPages" : "";
 
+		// Construct the path to the HTML file
+		const filePath = `../${folderName}/${page}.html`;
 
-			// Update the page-heading based on the clicked link
-			if (page === 'editorial') {
-				document.querySelector('.page-heading').innerHTML = `<h1>Editorial Board</h1>`;
-			} else if (page === 'guideToAuthor') {
-				document.querySelector('.page-heading').innerHTML = `	<h1>Author Instructions/Guidelines</h1>
-								<ol class="sj-breadcrumb">
-								<li><a href="javascript:void(0);">Home</a></li> 		
-								<li><a href="javascript:void(0);">Author Guidelinest</a></li>
-								</ol>`;
-			} else if (page === 'guideForReviewers') {
-				document.querySelector('.page-heading').innerHTML = `<h1>Guide for Reviewers and Editors</h1>
-`;
+		console.log({ filePath });
 
-			} else if (page === 'publicationEthics') {
-				document.querySelector('.page-heading').innerHTML = `<h1>Publication Ethics</h1>
-`;
+		// Fetch the content from the HTML file
+		fetch(filePath)
+			.then(response => {
+				if (!response.ok) {
+					throw new Error('Failed to load content');
+				}
+				return response.text();
+			})
+			.then(html => {
+				// Insert the content into the container
+				document.getElementById('contentContainer').innerHTML = html;
 
-			} else if (page === 'indexing-and-abstracting') {
-				document.querySelector('.page-heading').innerHTML = `<h1>Indexing and Abstracting</h1>
-`;
-
-			} else if (page === 'article-processing-charges') {
-				document.querySelector('.page-heading').innerHTML = `<h1>Article Processing Charges</h1>
-`;
-
-			}
-			else if (page === 'special-issues') {
-				document.querySelector('.page-heading').innerHTML = `   <h1>Special Issue </h1>
-                <ol class="sj-breadcrumb">
-                  <li><a href="javascript:void(0);">Home</a></li>
-                  <li><a href="javascript:void(0);">Issues</a></li>
-                  <li><a href="javascript:void(0);"> Special -Issues</a></li>
-                </ol>
-`;
-			}
-			else if (page === 'conferences') {
-				document.querySelector('.page-heading').innerHTML = `   <h1>Conferences </h1>
-                <ol class="sj-breadcrumb">
-                  <li><a href="javascript:void(0);">Home</a></li>
-                  <li><a href="javascript:void(0);">Issues</a></li>
-                  <li><a href="javascript:void(0);"> Conferences</a></li>
-                </ol>
-`;
-			}
-			else if (page === 'current-issue') {
-				document.querySelector('.page-heading').innerHTML = `   	<h1><b>Current Issue</b></h1>
-								<ol class="sj-breadcrumb">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="current-issue.html">Current Issue</a></li>
-								</ol>
-`;
-			}
-			else if (page === 'aims-and-scope') {
-				document.querySelector('.page-heading').innerHTML = `   	<h1>Aims And Scope</h1>
-							
-`;
-			}
-			else if (page === 'authors-benefits') {
-				document.querySelector('.page-heading').innerHTML = `   	<h1>Author Benefits</h1>
-							
-`;
-			}
-			else if (page === 'subjects-covered') {
-				document.querySelector('.page-heading').innerHTML = `   	<h1>Subjects Covered</h1>
-							
-`;
-			}
-			else if (page === 'readership') {
-				document.querySelector('.page-heading').innerHTML = `   	<h1>Readership</h1>
-							
-`;
-			}
-
-			// Scroll to the top of the page
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth' // Smooth scrolling effect
+				// Use a switch statement to update the page heading
+				switch (page) {
+					case 'editorial':
+						document.querySelector('.page-heading').innerHTML = `<h1>Editorial Board</h1>`;
+						break;
+					case 'guideToAuthor':
+						document.querySelector('.page-heading').innerHTML = `
+				<h1>Author Instructions/Guidelines</h1>
+				<ol class="sj-breadcrumb">
+				  <li><a href="javascript:void(0);">Home</a></li>
+				  <li><a href="javascript:void(0);">Author Guidelines</a></li>
+				</ol>`;
+						break;
+					case 'guideForReviewers':
+						document.querySelector('.page-heading').innerHTML = `<h1>Guide for Reviewers and Editors</h1>`;
+						break;
+					case 'publicationEthics':
+						document.querySelector('.page-heading').innerHTML = `<h1>Publication Ethics</h1>`;
+						break;
+					case 'indexing-and-abstracting':
+						document.querySelector('.page-heading').innerHTML = `<h1>Indexing and Abstracting</h1>`;
+						break;
+					case 'article-processing-charges':
+						document.querySelector('.page-heading').innerHTML = `<h1>Article Processing Charges</h1>`;
+						break;
+					case 'special-issues':
+						document.querySelector('.page-heading').innerHTML = `
+				<h1>Special Issue</h1>
+				<ol class="sj-breadcrumb">
+				  <li><a href="javascript:void(0);">Home</a></li>
+				  <li><a href="javascript:void(0);">Issues</a></li>
+				  <li><a href="javascript:void(0);">Special Issues</a></li>
+				</ol>`;
+						break;
+					case 'conferences':
+						document.querySelector('.page-heading').innerHTML = `
+				<h1>Conferences</h1>
+				<ol class="sj-breadcrumb">
+				  <li><a href="javascript:void(0);">Home</a></li>
+				  <li><a href="javascript:void(0);">Issues</a></li>
+				  <li><a href="javascript:void(0);">Conferences</a></li>
+				</ol>`;
+						break;
+					case 'current-issue':
+						document.querySelector('.page-heading').innerHTML = `
+				<h1><b>Current Issue</b></h1>
+				<ol class="sj-breadcrumb">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="current-issue.html">Current Issue</a></li>
+				</ol>`;
+						break;
+					case 'aims-and-scope':
+						document.querySelector('.page-heading').innerHTML = `<h1>Aims And Scope</h1>`;
+						break;
+					case 'authors-benefits':
+						document.querySelector('.page-heading').innerHTML = `<h1>Author Benefits</h1>`;
+						break;
+					case 'subjects-covered':
+						document.querySelector('.page-heading').innerHTML = `<h1>Subjects Covered</h1>`;
+						break;
+					case 'readership':
+						document.querySelector('.page-heading').innerHTML = `<h1>Readership</h1>`;
+						break;
+					default:
+						console.error('Unknown page:', page);
+				}
+			})
+			.catch(error => {
+				console.error('Error loading content:', error);
 			});
-		})
-		.catch(error => {
-			console.error('Error loading content:', error);
-		});
+	}
 }
 
-document.querySelectorAll('li a').forEach(link => {
+// Add event listeners to all <a> tags
+document.querySelectorAll('a').forEach(link => {
 	link.addEventListener('click', loadContent);
 });
 

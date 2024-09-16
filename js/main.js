@@ -383,10 +383,10 @@ function loadContent(event) {
 		const page = pageParts.join('-');
 
 		// Determine the folder based on the identifier
-		const folderName = folder === 'chem' ? "chemSubPages" : folder === 'math' ? "mathSubPages" : "";
+		const folderName = folder === 'chem' ? "chemSubPages" : folder === 'math' ? "mathSubPages" : "sciSubPages";
 
 		// Construct the path to the HTML file
-		const filePath = `../${folderName}/${page}.html`;
+		const filePath = `../aristone/${folderName}/${page}.html`;
 
 		console.log({ filePath });
 

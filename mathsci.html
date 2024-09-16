@@ -248,7 +248,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-							<div class="sj-innerbannercontent">
+							<div class=" page-heading sj-innerbannercontent">
 								<h1>Mathsci Express</h1>
 								<ol class="sj-breadcrumb">
 									<li><a href="#">Home</a></li>
@@ -276,17 +276,48 @@
 									<div class="sj-widget sj-widgetimpactfector sidebar leftsidebar">
 										<ul>
 											<li><a href="mathsci.html">Mathsci Express - Home</a></li>
-											<li><a href="#about">About Mathsci Express</a></li>
-											<li><a href="editorailboard.html">Editorial Board</a></li>
-											<li><a href="authorguideline.html">Guide to Authors</a></li>
-											<li><a href="reviewer-guide.html">Guide for Reviewers and Editors</a></li>
-											<li><a href="publication-Ethics.html">Publication Ethics</a></li>
-											<li><a href="abstracting.html">Indexing and Abstracting</a></li>
-											<li><a href="articleprocess.html">Article Processing Charges</a></li>
+											<li><a id="aboutLink">About Mathsci Express</a>
+												<i class="bi bi-caret-down-fill"></i>
+												<ul id="aboutSubmenu" class="aboutSubmenu submenu border border-0 pl-5"
+													data-bs-popper="static" style="display: none;">
+													<li class="sidebar-menu border border-0">
+														<a id="math-aims-and-scope" class="m-0 p-0 nav-link"
+															href="#math-aims-and-scope">Aims and Scope</a>
+													</li>
+													<li class="sidebar-menu border border-0">
+														<a id="math-authors-benefits" class="m-0 p-0 nav-link"
+															href="#math-authors-benefits">Authors Benefits</a>
+													</li>
+													<li class="sidebar-menu border border-0">
+														<a id="math-subjects-covered" class="m-0 p-0 nav-link"
+															href="#math-subjects-covered">Subjects Covered</a>
+													</li>
+													<li class="sidebar-menu border border-0">
+														<a id="math-readership" class="m-0 p-0 nav-link"
+															href="#math-readership">Readership</a>
+													</li>
+												</ul>
+											</li>
+
+											<li><a id="math-editorialLink" href="#math-editorial">Editorial Board</a>
+											</li>
+											<li><a id="math-guideToAuthor" href="#math-guideToAuthor">Guide to
+													Authors</a></li>
+											<li><a id="math-guideForReviewersLink" href="#math-guideForReviewers">Guide
+													for Reviewers and Editors</a></li>
+											<li><a id="math-publicationEthics"
+													href="#math-publicationEthics">Publication Ethics</a></li>
+											<li><a id="math-indexing-and-abstracting"
+													href="#math-indexing-and-abstracting">Indexing and Abstracting</a>
+											</li>
+											<li><a id="math-article-processing-charges"
+													href="#math-article-processing-charges">Article Processing
+													Charges</a></li>
 											<li><a href="recommand-library.html">Recommend to Library</a></li>
 											<li><a href="#manuscript-template">Manuscript Template</a></li>
-											<li><a href="specail-issue.html">Special Issues</a></li>
-											<li><a href="confrence.html">Conferences</a></li>
+											<li><a id="math-special-issues" href="#math-special-issues">Special
+													Issues</a></li>
+											<li><a id="math-conferences" href="#math-conferences">Conferences</a></li>
 											<li><a href="contactus.html">Contact Us</a></li>
 											<li><a href="#">Journal Browsers</a></li>
 											<li>
@@ -320,7 +351,7 @@
 												</a>
 											</li>
 											<li><a href="#article-in-press">Article in Press</a></li>
-											<li><a href="current-issue.html">Current Issue</a></li>
+											<li><a id="math-current-issue" href="#math-current-issue">Current Issue</a></li>
 											<li><a href="#all-volumes">All Volumes</a></li>
 											<li class="all-volume-li"><a href="#volume-1-issue-3">Volume 1, Issue 4
 													(December 2024)</a></li>
@@ -335,7 +366,7 @@
 
 								</aside>
 							</div>
-							<div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
+							<div id="contentContainer" class="col-12 col-sm-12 col-md-6 col-lg-6 ">
 								<div id="sj-content" class="sj-content">
 									<div class="sj-newsdetail">
 										<div class="sj-head">
@@ -392,6 +423,7 @@
 										</div>
 									</div>
 
+									<!-- volumne 1 issue 3  -->
 									<!--Graphene Oxide and Based Materials: Synthesis, Properties, and Applications – A Comprehensive Review    -->
 									<div class="sj-author">
 										<div class="volume-heading">

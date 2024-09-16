@@ -365,32 +365,24 @@ jQuery(document).on('ready', function () {
 
 
 function loadContent(event) {
-	// Get the target element (clicked link)
 	const targetLink = event.target;
 
-	// Extract the href value
 	const hrefValue = targetLink.getAttribute('href');
 
-	// Check if the href starts with '#' to prevent default behavior for internal links
 	if (hrefValue && hrefValue.startsWith('#')) {
 		event.preventDefault();  // Prevent the default scroll behavior
 
-		// Get the target page (removing the leading '#')
-		// Remove the leading '#' and split the href value by the first hyphen
 		const [folder, ...pageParts] = hrefValue.substring(1).split('-');
 
-		// Rejoin the remaining parts of the array to get the full page name
 		const page = pageParts.join('-');
 
-		// Determine the folder based on the identifier
 		const folderName = folder === 'chem' ? "chemSubPages" : folder === 'math' ? "mathSubPages" : "sciSubPages";
 
-		// Construct the path to the HTML file
 		const filePath = `../aristone/${folderName}/${page}.html`;
+		// const filePath = `../${folderName}/${page}.html`;
 
 		console.log({ filePath });
 
-		// Fetch the content from the HTML file
 		fetch(filePath)
 			.then(response => {
 				if (!response.ok) {
@@ -399,10 +391,8 @@ function loadContent(event) {
 				return response.text();
 			})
 			.then(html => {
-				// Insert the content into the container
 				document.getElementById('contentContainer').innerHTML = html;
 
-				// Use a switch statement to update the page heading
 				switch (page) {
 					case 'editorial':
 						document.querySelector('.page-heading').innerHTML = `<h1>Editorial Board</h1>`;
@@ -475,32 +465,75 @@ function loadContent(event) {
 	}
 }
 
-// Add event listeners to all <a> tags
 document.querySelectorAll('a').forEach(link => {
 	link.addEventListener('click', loadContent);
 });
 
-// Get the about link and submenu
 const aboutLink = document.getElementById('aboutLink');
 const aboutSubmenu = document.getElementById('aboutSubmenu');
 
-// Add click event listener to toggle the submenu
-aboutLink.addEventListener('click', function (event) {
+document.addEventListener('DOMContentLoaded', () => {
+	const aboutLink = document.getElementById('aboutLink');
+	const aboutSubmenu = document.getElementById('aboutSubmenu');
 
-	// Check if the submenu is currently visible
-	if (aboutSubmenu.style.display === 'none' || aboutSubmenu.style.display === '') {
-		aboutSubmenu.style.display = 'block'; // Show the submenu
+	// Ensure elements exist before attaching event listeners
+	if (aboutLink && aboutSubmenu) {
+		aboutLink.addEventListener('click', function (event) {
+			// Toggle submenu visibility
+			if (aboutSubmenu.style.display === 'none' || aboutSubmenu.style.display === '') {
+				aboutSubmenu.style.display = 'block'; // Show the submenu
+			} else {
+				aboutSubmenu.style.display = 'none'; // Hide the submenu
+			}
+		});
+
+		const submenuLinks = aboutSubmenu.querySelectorAll('a');
+
+		submenuLinks.forEach(link => {
+			link.addEventListener('click', function () {
+				aboutSubmenu.style.display = 'none'; // Hide the submenu after clicking
+			});
+		});
 	} else {
-		aboutSubmenu.style.display = 'none'; // Hide the submenu
+		console.warn('Elements #aboutLink or #aboutSubmenu not found.');
+	}
+
+	// Code for .showHtml1 and .showHtml2
+	const showHtml1 = document.querySelector('.showHtml1');
+	const showHtml2 = document.querySelector('.showHtml2');
+
+	const html1 = document.querySelector('.html-1');
+	const html2 = document.querySelector('.html-2');
+
+	if (showHtml1 && showHtml2 && html1 && html2) {
+		showHtml1.addEventListener('click', () => {
+			html1.classList.remove('hide-html');
+			html2.classList.add('hide-html');
+
+			showHtml1.classList.add('current-tab');
+			showHtml2.classList.remove('current-tab');
+		});
+
+		showHtml2.addEventListener('click', () => {
+			html1.classList.add('hide-html');
+			html2.classList.remove('hide-html');
+
+			showHtml1.classList.remove('current-tab');
+			showHtml2.classList.add('current-tab');
+		});
+	} else {
+		console.warn('Buttons or content divs not found.');
 	}
 });
 
-// Get all submenu links
+
 const submenuLinks = aboutSubmenu.querySelectorAll('a');
 
-// Add click event listener to each submenu link to close the submenu after a click
 submenuLinks.forEach(link => {
 	link.addEventListener('click', function () {
 		aboutSubmenu.style.display = 'none'; // Hide the submenu after clicking
 	});
 });
+
+
+

@@ -30,10 +30,12 @@
     <link rel="stylesheet" href="css/articleDetail.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/new.css">
+
 </head>
 
+<!--[if lt IE 8]>
 <body>
-    <!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
     <!--************************************
@@ -311,22 +313,10 @@
                                 <div id="sj-content" class="sj-content">
                                     <div class="sj-authorguidelines">
 
-                                        <!-- information for author  -->
-                                        <div class="sj-introduction sj-sectioninnerspace">
-                                            <ul class="nav list-none nav-underline border-bottom" id="myTab"
-                                                role="tablist">
-                                                <li class="nav-item  list-none" role="presentation">
-                                                    <button style="outline:none;"
-                                                        class="nav-link current-tab showHtml1 " id="authors-tab"
-                                                        type="button" role="tab" aria-controls="authors"
-                                                        aria-selected="true">Authors</button>
-                                                </li>
-                                                <li class="nav-item list-none" role="presentation">
-                                                    <button style="outline:none;" class="nav-link showHtml2"
-                                                        id="authors-and-affiliations-tab" type="button" role="tab"
-                                                        aria-controls="authors-and-affiliations"
-                                                        aria-selected="false">Authors and affiliations</button>
-                                                </li>
+                                        <div class="author-affiliciation">
+                                            <ul>
+                                                <li class="current-tab showHtml1">Authors</li>
+                                                <li class="showHtml2">Authors and affiliations</li>
                                             </ul>
                                         </div>
                                         <div class=" sj-introduction ">
@@ -393,7 +383,9 @@
                                                     scattering effects, reinforcing the potential application of these
                                                     films in optoelectronic devices.
                                                 </p>
-                                                <figure  style="align-items: center; display: flex; justify-content: center;" class="wp-block-image size-full"><img fetchpriority="high"
+                                                <figure
+                                                    style="align-items: center; display: flex; justify-content: center;"
+                                                    class="wp-block-image size-full"><img fetchpriority="high"
                                                         decoding="async" width="335" height="251"
                                                         src="images/ariston publication img/image-6.webp" alt=""
                                                         class="wp-image-569"></figure>
@@ -595,7 +587,8 @@
                                         </p>
                                         <p class="link"><strong>Cite this article:</strong>
                                         </p>
-                                        <p style="text-align: left !important;">Mane, S. H.<strong> 2024. </strong>Structural and Optical Characterization of
+                                        <p style="text-align: left !important;">Mane, S. H.<strong> 2024.
+                                            </strong>Structural and Optical Characterization of
                                             Chemically Deposited Polycrystalline Cadmium Selenide Thin Films.
                                             <em>ChemSci Advances</em> 1(3), pp. 132-138; <a
                                                 href="https://doi.org/10.69626/csa.2024.0132">https://doi.org/10.69626/csa.2024.0132</a>
@@ -877,34 +870,9 @@
     <script src="js/countdown.js"></script>
     <script src="js/appear.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        // Get the buttons by their classes
-        const showHtml1 = document.querySelector('.showHtml1');
-        const showHtml2 = document.querySelector('.showHtml2');
 
-        // Get the content divs
-        const html1 = document.querySelector('.html-1');
-        const html2 = document.querySelector('.html-2');
+    
 
-        // Add click event listeners to the buttons
-        showHtml1.addEventListener('click', () => {
-            html1.classList.remove('hide-html');
-            html2.classList.add('hide-html');
-
-            // Update active classes
-            showHtml1.classList.add('current-tab');
-            showHtml2.classList.remove('current-tab');
-        });
-
-        showHtml2.addEventListener('click', () => {
-            html1.classList.add('hide-html');
-            html2.classList.remove('hide-html');
-
-            // Update active classes
-            showHtml1.classList.remove('current-tab');
-            showHtml2.classList.add('current-tab');
-        });
-    </script>
 
 </body>
 

@@ -4561,4 +4561,10 @@ justify-content: start;
 	padding-right: 0.5rem;
 	color: black;
 }
+.conflict-of-interest ul li {
+	list-style-type: none;
+}
+.quick-guide-author-main ul li {
+	list-style-type: none;
+}
 

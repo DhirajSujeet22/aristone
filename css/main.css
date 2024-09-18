@@ -6110,3 +6110,21 @@ body.sj-userlogin .sj-topbar .sj-languages {
 .quick-guide-author-main ul li {
 	list-style-type: none;
 }
+
+
+.sj-journals {
+
+	display: flex;
+	width: 100%;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+}
+
+/* @media screen and (min-width: 1200px) {
+	.sj-journals {
+
+
+	}
+} */

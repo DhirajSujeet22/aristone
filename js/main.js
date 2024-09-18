@@ -527,13 +527,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const submenuLinks = aboutSubmenu.querySelectorAll('a');
+if (aboutSubmenu) {
+	const submenuLinks = aboutSubmenu.querySelectorAll('a');
 
-submenuLinks.forEach(link => {
-	link.addEventListener('click', function () {
-		aboutSubmenu.style.display = 'none'; // Hide the submenu after clicking
+	submenuLinks.forEach(link => {
+		link.addEventListener('click', function () {
+			aboutSubmenu.style.display = 'none';
+		});
 	});
-});
-
+}
 
 

@@ -31,7 +31,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
         }
     } catch (error) {
-        console.error('Error fetching user data:', error);
+        if (error.response && error.response.status === 401) {
+            console.log("Unauthorized")
+        } else {
+            console.error('An unexpected error occurred:', error.message);
+        }
     }
 });
 

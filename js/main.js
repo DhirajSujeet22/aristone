@@ -378,8 +378,8 @@ function loadContent(event) {
 
 		const folderName = folder === 'chem' ? "chemSubPages" : folder === 'math' ? "mathSubPages" : "sciSubPages";
 
-		const filePath = `../aristone/${folderName}/${page}.html`;
-		// const filePath = `../${folderName}/${page}.html`;
+		// const filePath = `../aristone/${folderName}/${page}.html`;
+		const filePath = `../${folderName}/${page}.html`;
 
 		console.log({ filePath });
 

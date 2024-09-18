@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const response = await axiosInstance.get('/api/users/own');
 
         // Check if the response indicates that the user is logged in
-        if (response.data.result) {
+        if (response.data.result && response.data.result !== null) {
             // Hide the login and register area if the user is logged in
             console.log(response.data.result)
             const loginArea = document.querySelector('.sj-loginarea');

@@ -10,7 +10,7 @@ function getCookie(name) {
 const token = getCookie('accessToken');
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:53321',
+    baseURL: 'https://aristone-be.vercel.app',
     headers: {
         'Authorization': token ? `Bearer ${token}` : undefined
     }
@@ -82,7 +82,7 @@ async function handleFormSubmission(formType) {
     try {
         let response;
         if (formType === 'signup') {
-            response = await axios.post('http://localhost:53321/api/users/create', {
+            response = await axios.post('https://aristone-be.vercel.app/api/users/create', {
                 firstname,
                 lastname,
                 email,
@@ -94,7 +94,7 @@ async function handleFormSubmission(formType) {
                 window.location.href = '/';
             }
         } else if (formType === 'login') {
-            response = await axios.post('http://localhost:53321/api/users/login', {
+            response = await axios.post('https://aristone-be.vercel.app/api/users/login', {
                 email,
                 password
             });

@@ -29,6 +29,8 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="/js/auth.js" defer></script>
 </head>
 
 <body>
@@ -277,7 +279,7 @@
 										<ul>
 											<li><a href="#">ChemSci Advance - Home</a></li>
 											<li>
-												<a  id="aboutLink">About ChemSci Advance</a>
+												<a id="aboutLink">About ChemSci Advance</a>
 												<i class="bi bi-caret-down-fill"></i>
 												<ul id="aboutSubmenu" class="aboutSubmenu submenu border border-0 pl-5"
 													data-bs-popper="static" style="display: none;">
@@ -301,21 +303,29 @@
 											</li>
 
 
-											<li><a id="chem-editorialLink" href="#chem-editorial">Editorial Board</a></li>
-											<li><a id="chem-guideToAuthor" href="#chem-guideToAuthor">Guide to Authors</a></li>
-											<li><a id="chem-guideForReviewersLink" href="#chem-guideForReviewers">Guide for
+											<li><a id="chem-editorialLink" href="#chem-editorial">Editorial Board</a>
+											</li>
+											<li><a id="chem-guideToAuthor" href="#chem-guideToAuthor">Guide to
+													Authors</a></li>
+											<li><a id="chem-guideForReviewersLink" href="#chem-guideForReviewers">Guide
+													for
 													Reviewers and Editors</a>
 											</li>
-											<li><a id="chem-publicationEthics" href="#chem-publicationEthics">Publication
+											<li><a id="chem-publicationEthics"
+													href="#chem-publicationEthics">Publication
 													Ethics</a></li>
 											<li><a id="chem-indexing-and-abstracting"
-													href="#chem-indexing-and-abstracting">Indexing and Abstracting</a></li>
+													href="#chem-indexing-and-abstracting">Indexing and Abstracting</a>
+											</li>
 											<li><a id="chem-article-processing-charges"
-													href="#chem-article-processing-charges">Article Processing Charges</a>
+													href="#chem-article-processing-charges">Article Processing
+													Charges</a>
 											</li>
 											<li><a href="recommand-library.html">Recommend to Library</a></li>
-											<li><a href="#manuscript-template">Manuscript Template</a></li>
-											<li><a id="chem-special-issues" href="#chem-special-issues">Special Issues</a></li>
+											<li><a id="chem-manuscript-template"
+													href="#chem-manuscript-template">Manuscript Template</a></li>
+											<li><a id="chem-special-issues" href="#chem-special-issues">Special
+													Issues</a></li>
 											<li><a id="chem-conferences" href="#chem-conferences">Conferences</a></li>
 											<li><a href="contactus.html">Contact Us</a></li>
 											<li><a href="#journal-browsers">Journal Browsers</a></li>
@@ -349,7 +359,8 @@
 												</a>
 											</li>
 											<li><a href="article-in-press.html">Article in Press </a></li>
-											<li><a id="chem-chem-current-issue" href="#chem-chem-current-issue">Current Issue</a></li>
+											<li><a id="chem-chem-current-issue" href="#chem-chem-current-issue">Current
+													Issue</a></li>
 											<li><a href="#all-volumes">All Volumes</a></li>
 											<li class="all-volume-li"><a href="#volume-1-issue-3">Volume 1, Issue 3
 													(September 2024) in progress </a></li>
@@ -444,15 +455,19 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="structural-and-anticoagulant.html">Structural and Anticoagulant Studies of Mg1-xZnxFe2O4,
-															Mg1-xCoxFe2O4 and Mg1-xNixFe2O4 (x=0.15, 0.25 and 0.35)
-															Ferrites Synthesized by Co-Precipitation</a></span> </h3>
+														<h3><span><a href="structural-and-anticoagulant.html">Structural
+																	and Anticoagulant Studies of Mg1-xZnxFe2O4,
+																	Mg1-xCoxFe2O4 and Mg1-xNixFe2O4 (x=0.15, 0.25 and
+																	0.35)
+																	Ferrites Synthesized by Co-Precipitation</a></span>
+														</h3>
 														<span><b>Rakesh Vishwarup, Shridhar N. Mathad, S. Nagaraju,
 																Sandip V. Kamat, Deepak B. Shirgaonkar</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-														<a href="structural-and-anticoagulant.html"><img src="images/chemsci-advance/image-14.png" alt=""
-															width="250"></a>
+														<a href="structural-and-anticoagulant.html"><img
+																src="images/chemsci-advance/image-14.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -493,14 +508,16 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="analysis-and-impact.html">Analysis and Impact of Formulated Herbal Medicine Against
-															COVID-19 and Other Viral Infections</a></span>
+														<h3><span><a href="analysis-and-impact.html">Analysis and Impact
+																	of Formulated Herbal Medicine Against
+																	COVID-19 and Other Viral Infections</a></span>
 														</h3>
 														<span><b>Santosh Gajanan Kate, Vishal Vilas Dawkar </b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-													<a href="analysis-and-impact.html">	<img src="images/chemsci-advance/image-15.png" alt=""
-														width="250"></a>
+														<a href="analysis-and-impact.html"> <img
+																src="images/chemsci-advance/image-15.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -544,15 +561,18 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="structural-and-optical.html">Structural and Optical Characterization of Chemically
-															Deposited Polycrystalline Cadmium Selenide Thin Films
-</a></span>
+														<h3><span><a href="structural-and-optical.html">Structural and
+																	Optical Characterization of Chemically
+																	Deposited Polycrystalline Cadmium Selenide Thin
+																	Films
+																</a></span>
 														</h3>
 														<span><b>S. H. Mane</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-														<a href="structural-and-optical.html"><img src="images/chemsci-advance/image-6.png" alt=""
-															width="250"></a>
+														<a href="structural-and-optical.html"><img
+																src="images/chemsci-advance/image-6.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -595,15 +615,19 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="structural-and-morphological.html">Structural and Morphological Investigation of CoZnFe – Oxide
-															Nanoparticles and Their Electrical and Magnetic Properties
-</a></span>
+														<h3><span><a href="structural-and-morphological.html">Structural
+																	and Morphological Investigation of CoZnFe – Oxide
+																	Nanoparticles and Their Electrical and Magnetic
+																	Properties
+																</a></span>
 														</h3>
 														<span><b>Ram S. Barkule, Sudarshana G. Badhe, Mahendra D. Shelar
 															</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-														<a href="structural-and-morphological.html"><img src="images/chemsci-advance/image.png" alt="" width="250"></a>
+														<a href="structural-and-morphological.html"><img
+																src="images/chemsci-advance/image.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -655,8 +679,10 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="Innovations in Starch Based Bioplastics.html">Innovations in Starch Based Bioplastics: A Comprehensive
-															Review of Methods and Applications</a></span></h3>
+														<h3><span><a
+																	href="Innovations in Starch Based Bioplastics.html">Innovations
+																	in Starch Based Bioplastics: A Comprehensive
+																	Review of Methods and Applications</a></span></h3>
 														<span><b>Manmeet Kour, Rajeev Kumar, Savita Chaudhary</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
@@ -703,7 +729,9 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="Wastewater Treatment Using Microbial Fuel Cells.html">Wastewater Treatment Using Microbial Fuel Cells</a></span>
+														<h3><span><a
+																	href="Wastewater Treatment Using Microbial Fuel Cells.html">Wastewater
+																	Treatment Using Microbial Fuel Cells</a></span>
 
 
 														</h3>
@@ -712,8 +740,9 @@
 															</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-														<a href="Wastewater Treatment Using Microbial Fuel Cells.html"><img src="images/chemsci-advance/image-9.png" alt=""
-															width="250"></a>
+														<a href="Wastewater Treatment Using Microbial Fuel Cells.html"><img
+																src="images/chemsci-advance/image-9.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -767,16 +796,18 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="Unlocking the Power of Solar Synergy.html">Unlocking the Power of Solar Synergy: Enhanced Nitrophenol
-															Degradation using ADGCAAQ Photocatalyst</a></span>
+														<h3><span><a href="Unlocking the Power of Solar Synergy.html">Unlocking
+																	the Power of Solar Synergy: Enhanced Nitrophenol
+																	Degradation using ADGCAAQ Photocatalyst</a></span>
 														</h3>
 														<span><b>Shikha Anand, Rajesh K. Yadav, Aditya Nath Yadav,
 																Satyam Singh, Rehana Shahin, Jin-OoK Baeg, Kamini Singh,
 																Maneesha Pandey, Suman Yadav, D. K. Dwivedi</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-													<a href="Unlocking the Power of Solar Synergy.html">	<img src="images/chemsci-advance/image-10.png" alt=""
-														width="250"></a>
+														<a href="Unlocking the Power of Solar Synergy.html"> <img
+																src="images/chemsci-advance/image-10.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -823,8 +854,10 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="Biodegradation of Malachite Green Dye by Novel Isolated.html">Biodegradation of Malachite Green Dye by Novel Isolated
-															Bacillus Species AAV from Garden Soil</a></span>
+														<h3><span><a
+																	href="Biodegradation of Malachite Green Dye by Novel Isolated.html">Biodegradation
+																	of Malachite Green Dye by Novel Isolated
+																	Bacillus Species AAV from Garden Soil</a></span>
 
 
 
@@ -836,8 +869,10 @@
 															</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-														<a href="Biodegradation of Malachite Green Dye by Novel Isolated.html"><img src="images/chemsci-advance/image-11.png" alt=""
-															width="250"></a>
+														<a
+															href="Biodegradation of Malachite Green Dye by Novel Isolated.html"><img
+																src="images/chemsci-advance/image-11.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -885,8 +920,11 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="Synthesis and Antibacterial Properties of Silver Nanoparticles Derived .html">Synthesis and Antibacterial Properties of Silver
-															Nanoparticles Derived from Cardiospermum halicacabum Leaves</a></span>
+														<h3><span><a
+																	href="Synthesis and Antibacterial Properties of Silver Nanoparticles Derived .html">Synthesis
+																	and Antibacterial Properties of Silver
+																	Nanoparticles Derived from Cardiospermum halicacabum
+																	Leaves</a></span>
 
 
 														</h3>
@@ -895,8 +933,10 @@
 															</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-													<a href="Synthesis and Antibacterial Properties of Silver Nanoparticles Derived .html">	<img src="images/chemsci-advance/image-12.png" alt=""
-														width="250"></a>
+														<a
+															href="Synthesis and Antibacterial Properties of Silver Nanoparticles Derived .html">
+															<img src="images/chemsci-advance/image-12.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -941,9 +981,12 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="Voltammetric Detection of Diazinon Insecticide at Ferrocene.html">Voltammetric Detection of Diazinon Insecticide at
-															Ferrocene-Graphene/Nafion Modified Glassy Carbon Electrode
-</a></span>
+														<h3><span><a
+																	href="Voltammetric Detection of Diazinon Insecticide at Ferrocene.html">Voltammetric
+																	Detection of Diazinon Insecticide at
+																	Ferrocene-Graphene/Nafion Modified Glassy Carbon
+																	Electrode
+																</a></span>
 
 
 														</h3>
@@ -951,8 +994,10 @@
 															</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-														<a href="Voltammetric Detection of Diazinon Insecticide at Ferrocene.html"><img src="images/chemsci-advance/image-13.png" alt=""
-															width="250"></a>
+														<a
+															href="Voltammetric Detection of Diazinon Insecticide at Ferrocene.html"><img
+																src="images/chemsci-advance/image-13.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -1006,8 +1051,9 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="Welcome to the ChemSci Advances.html">Welcome to the ChemSci Advances
-														</a></span>
+														<h3><span><a href="Welcome to the ChemSci Advances.html">Welcome
+																	to the ChemSci Advances
+																</a></span>
 														</h3>
 														<span><b>Rahul Patil, Ashok Chougale</b></span>
 													</div>
@@ -1060,8 +1106,9 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="Efficient Dye Removal Strategies.html">Efficient Dye Removal Strategies: Exploring the Role of
-															Biochar</a></span>
+														<h3><span><a href="Efficient Dye Removal Strategies.html">Efficient
+																	Dye Removal Strategies: Exploring the Role of
+																	Biochar</a></span>
 
 
 														</h3>
@@ -1069,8 +1116,9 @@
 																Chougale</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-														<a href="Efficient Dye Removal Strategies.html"><img src="images/chemsci-advance/efficientdye.png" alt=""
-															width="250"></a>
+														<a href="Efficient Dye Removal Strategies.html"><img
+																src="images/chemsci-advance/efficientdye.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -1128,9 +1176,11 @@
 
 													<div class="sj-authorname m-2 ml-0">
 														<h3><span>
-															<a href="Ni-Doped LaFeO₃ Microspheres Composed of Nanoparticles .html">Ni-Doped LaFeO₃ Microspheres Composed of Nanoparticles for
-																the Photocatalytic Degradation of Organic Dye</a>
-														</span>
+																<a
+																	href="Ni-Doped LaFeO₃ Microspheres Composed of Nanoparticles .html">Ni-Doped
+																	LaFeO₃ Microspheres Composed of Nanoparticles for
+																	the Photocatalytic Degradation of Organic Dye</a>
+															</span>
 
 
 
@@ -1141,8 +1191,10 @@
 																Miglani</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-														<a href="Ni-Doped LaFeO₃ Microspheres Composed of Nanoparticles .html"><img src="images/chemsci-advance/nidopedlafe.png" alt=""
-															width="250"></a>
+														<a
+															href="Ni-Doped LaFeO₃ Microspheres Composed of Nanoparticles .html"><img
+																src="images/chemsci-advance/nidopedlafe.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -1192,8 +1244,11 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="Fabrication of Superhydrophobic Coating by Spraying PDMS.html">Fabrication of Superhydrophobic Coating by Spraying
-															PDMS-SiO₂ Suspension for Self-Cleaning Application</a></span>
+														<h3><span><a
+																	href="Fabrication of Superhydrophobic Coating by Spraying PDMS.html">Fabrication
+																	of Superhydrophobic Coating by Spraying
+																	PDMS-SiO₂ Suspension for Self-Cleaning
+																	Application</a></span>
 
 
 
@@ -1204,8 +1259,10 @@
 															</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-														<a href="Fabrication of Superhydrophobic Coating by Spraying PDMS.html"><img src="images/chemsci-advance/fabrication.png" alt=""
-															width="250"></a>
+														<a
+															href="Fabrication of Superhydrophobic Coating by Spraying PDMS.html"><img
+																src="images/chemsci-advance/fabrication.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -1246,8 +1303,10 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="Electrodeposited Tungsten Trioxide (WO₃) Thin Films for.html">Electrodeposited Tungsten Trioxide (WO₃) Thin Films for
-															Electrochromic Applications</a></span>
+														<h3><span><a
+																	href="Electrodeposited Tungsten Trioxide (WO₃) Thin Films for.html">Electrodeposited
+																	Tungsten Trioxide (WO₃) Thin Films for
+																	Electrochromic Applications</a></span>
 
 
 
@@ -1259,8 +1318,10 @@
 															</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-													<a href="Electrodeposited Tungsten Trioxide (WO₃) Thin Films for.html">	<img src="images/chemsci-advance/electrodeposited.jpg" alt=""
-														width="250"></a>
+														<a
+															href="Electrodeposited Tungsten Trioxide (WO₃) Thin Films for.html">
+															<img src="images/chemsci-advance/electrodeposited.jpg"
+																alt="" width="250"></a>
 													</div>
 												</div>
 
@@ -1304,8 +1365,10 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="MOF Derived CoFe₂O₄@Carbon Nanofibers for Supercapacitor.html">MOF Derived CoFe₂O₄@Carbon Nanofibers for Supercapacitor
-															Application</a></span>
+														<h3><span><a
+																	href="MOF Derived CoFe₂O₄@Carbon Nanofibers for Supercapacitor.html">MOF
+																	Derived CoFe₂O₄@Carbon Nanofibers for Supercapacitor
+																	Application</a></span>
 
 
 
@@ -1317,8 +1380,10 @@
 															</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-													<span><a href="MOF Derived CoFe₂O₄@Carbon Nanofibers for Supercapacitor.html">	<img src="images/chemsci-advance/mofderived.png" alt=""
-														width="250"></a></span>
+														<span><a
+																href="MOF Derived CoFe₂O₄@Carbon Nanofibers for Supercapacitor.html">
+																<img src="images/chemsci-advance/mofderived.png" alt=""
+																	width="250"></a></span>
 													</div>
 												</div>
 
@@ -1357,8 +1422,10 @@
 													<!-- editorail section  -->
 
 													<div class="sj-authorname m-2 ml-0">
-														<h3><span><a href="Fabrication and Characterization of High-Capacity Manganese.html">Fabrication and Characterization of High-Capacity Manganese
-															Oxide Based Supercapacitor Electrode</a></span>
+														<h3><span><a
+																	href="Fabrication and Characterization of High-Capacity Manganese.html">Fabrication
+																	and Characterization of High-Capacity Manganese
+																	Oxide Based Supercapacitor Electrode</a></span>
 
 
 
@@ -1370,8 +1437,10 @@
 															</b></span>
 													</div>
 													<div class="sj-authorname text-center p-4">
-														<a href="Fabrication and Characterization of High-Capacity Manganese.html"><img src="images/chemsci-advance/image-8.png" alt=""
-															width="250"></a>
+														<a
+															href="Fabrication and Characterization of High-Capacity Manganese.html"><img
+																src="images/chemsci-advance/image-8.png" alt=""
+																width="250"></a>
 													</div>
 												</div>
 
@@ -1555,37 +1624,51 @@
 												<li class="most-recent"><a href="#">Most Recent Article </a>
 												</li>
 												<div class="recent-article-box">
-													<a href="structural-and-morphological.html"><img src="images/ariston publication img/image.png"
-														alt="recent-article img" width="150">
-													<p>Structural and Morphological Investigation of CoZnFe – Oxide
-														Nanoparticles and Their Electrical and Magnetic Properties</p></a>
-												</div>
-												<div class="recent-article-box">
-													<a href="structural-and-optical.html"><img src="images/ariston publication img/image-6.webp"
-														alt="recent-article img" width="200">
-													<p>Structural and Optical Characterization of Chemically Deposited
-														Polycrystalline Cadmium Selenide Thin Films</p></a>
-												</div>
-												<div class="recent-article-box">
-												<a href="analysis-and-impact.html">	<img src="images/ariston publication img/image-15.webp" width="200">
-													<p>Analysis and Impact of Formulated Herbal Medicine Against
-														COVID-19 and Other Viral Infections</p></a>
-												</div>
-												<div class="recent-article-box">
-													<a href="structural-and-anticoagulant.html"><img src="images/ariston publication img/image-14.webp" width="100">
-														<p>Structural and Anticoagulant Studies of Mg1-xZnxFe2O4,
-															Mg1-xCoxFe2O4 and Mg1-xNixFe2O4 (x=0.15, 0.25 and 0.35) Ferrites
-															Synthesized by Co-Precipitation </p></a>
-												</div>
-												<div class="recent-article-box">
-													<a href="Voltammetric Detection of Diazinon Insecticide at Ferrocene.html">
-														<img src="images/ariston publication img/image-13.png"
-														alt="recent-article img" width="100">
-													<p>Voltammetric Detection of Diazinon Insecticide at
-														Ferrocene-Graphene/Nafion Modified Glassy Carbon Electrode
-													</p>
+													<a href="structural-and-morphological.html"><img
+															src="images/ariston publication img/image.png"
+															alt="recent-article img" width="150">
+														<p>Structural and Morphological Investigation of CoZnFe – Oxide
+															Nanoparticles and Their Electrical and Magnetic Properties
+														</p>
 													</a>
-												</div>  
+												</div>
+												<div class="recent-article-box">
+													<a href="structural-and-optical.html"><img
+															src="images/ariston publication img/image-6.webp"
+															alt="recent-article img" width="200">
+														<p>Structural and Optical Characterization of Chemically
+															Deposited
+															Polycrystalline Cadmium Selenide Thin Films</p>
+													</a>
+												</div>
+												<div class="recent-article-box">
+													<a href="analysis-and-impact.html"> <img
+															src="images/ariston publication img/image-15.webp"
+															width="200">
+														<p>Analysis and Impact of Formulated Herbal Medicine Against
+															COVID-19 and Other Viral Infections</p>
+													</a>
+												</div>
+												<div class="recent-article-box">
+													<a href="structural-and-anticoagulant.html"><img
+															src="images/ariston publication img/image-14.webp"
+															width="100">
+														<p>Structural and Anticoagulant Studies of Mg1-xZnxFe2O4,
+															Mg1-xCoxFe2O4 and Mg1-xNixFe2O4 (x=0.15, 0.25 and 0.35)
+															Ferrites
+															Synthesized by Co-Precipitation </p>
+													</a>
+												</div>
+												<div class="recent-article-box">
+													<a
+														href="Voltammetric Detection of Diazinon Insecticide at Ferrocene.html">
+														<img src="images/ariston publication img/image-13.png"
+															alt="recent-article img" width="100">
+														<p>Voltammetric Detection of Diazinon Insecticide at
+															Ferrocene-Graphene/Nafion Modified Glassy Carbon Electrode
+														</p>
+													</a>
+												</div>
 
 											</ul>
 										</div>
@@ -1610,8 +1693,8 @@
 							<div class="col-12 col-sm-6 col-md-6 col-lg-3 float-left">
 								<div class="sj-fcol sj-footeraboutus">
 									<strong class="sj-logo sj-fcol-logo sj-navigationarea p-0">
-										<a href="index.html"><img src="images/small-width_logo.png" alt="image description"
-												style="width: 50px;"></a>
+										<a href="index.html"><img src="images/small-width_logo.png"
+												alt="image description" style="width: 50px;"></a>
 									</strong>
 									<div class="sj-description">
 										<p>Publishing Excellence
@@ -1722,7 +1805,7 @@
 	<!--************************************
 			Search End
 	*************************************-->
-	
+
 	<script src="js/vendor/jquery-3.3.1.js"></script>
 	<script src="js/vendor/jquery-library.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>

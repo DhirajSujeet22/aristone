@@ -46,7 +46,8 @@ body h6 {
 	line-height: 1.5;
 	font-style: normal;
 	text-transform: capitalize;
-	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+	font: 400 14px/23px system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 }
 
 h1 {
@@ -3648,9 +3649,11 @@ body.sj-userlogin .sj-topbar .sj-languages {
 .sj-author {
 	width: 100%;
 	float: left;
-	padding: 40px 0;
+	padding: 10px 0;
 	margin: 33px 0 0;
-	border-top: 1px solid #ddd;
+	border: 1px solid #ddd;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
 }
 
 .sj-authorimg {
@@ -3671,6 +3674,7 @@ body.sj-userlogin .sj-topbar .sj-languages {
 
 .sj-authorcontent {
 	padding: 20px;
+	padding-top: 10px !important;
 	overflow: hidden;
 	border-radius: 6px;
 	background: #fcfcfc;
@@ -3699,8 +3703,8 @@ body.sj-userlogin .sj-topbar .sj-languages {
 
 .sj-authorname span {
 	display: block;
-	font-size: 14px;
-	line-height: 14px;
+	font-size: 16px;
+	line-height: 16px;
 }
 
 .sj-authorcontent .sj-description p {
@@ -5953,6 +5957,7 @@ body.sj-userlogin .sj-topbar .sj-languages {
 .article-title {
 	font-weight: 700;
 	font-size: 2rem;
+	line-height: 32px;
 }
 
 .list-none {

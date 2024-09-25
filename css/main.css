@@ -22,6 +22,9 @@
 			Theme Reset Style					
 ============================================= */
 @import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Quicksand:300,400,500,700);
+/* //google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
 	margin: 0px;
@@ -32,6 +35,14 @@ body {
 	color: #636c77;
 	background: #fff url(../images/bodybg-01.png);
 	font: 400 14px/23px system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.quickstand-font{
+	font-family: 'Quicksand';
+	word-spacing: 5px;
+	font-weight: 500;
+}
+.poppins-font{
+	font-family: "Poppins", sans-serif;
 }
 
 body h1,
@@ -5775,7 +5786,7 @@ body.sj-userlogin .sj-topbar .sj-languages {
 .sidebar {
 	/* border: 1px solid black; */
 	/* border-right: 1px solid lightgrey; */
-	padding-right: 0.2rem;
+	/* padding-right: 0.2rem; */
 	background-color: #fcfcfc;
 
 
@@ -5824,23 +5835,27 @@ body.sj-userlogin .sj-topbar .sj-languages {
 
 .bottom-sidebar {
 	border: none;
-	padding-left: 1rem;
+	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+	/* padding-left: 1rem; */
 	/* border-left: 1px solid navy; */
 
 
 }
 
 .bottom-sidebar ul {
-	border: 1px solid lightgrey;
+	border: 1px solid rgb(99, 108, 119) ;
+	border-right: none;
 }
 
 .bottom-sidebar ul li {
 	font-size: 16px;
-	border: 1px solid lightgrey;
+	border: 1px solid rgb(99, 108, 119) ;
+	border-right: none;
+	margin: 0;
 }
 
 .bottom-sidebar .recent-article-box {
-	border: 1px solid lightgrey;
+	border: 1px solid rgb(99, 108, 119) ;
 	text-align: center;
 	padding: 0.8rem 0.2rem;
 	border-radius: 0.5rem;
@@ -5852,16 +5867,16 @@ body.sj-userlogin .sj-topbar .sj-languages {
 	color: black;
 }
 
-.bottom-sidebar {
-	/* border: 1px solid black; */
-}
+
+
 
 .leftsidebar {
-	/* border: 1px solid lightgray; */
+	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .leftsidebar li {
-	border: 1px solid lightgrey;
+	border: 1px solid rgb(99, 108, 119);
+	border-left:none;
 }
 
 .most-recent a {
@@ -5964,9 +5979,9 @@ body.sj-userlogin .sj-topbar .sj-languages {
 	list-style-type: none;
 }
 
-.ps-3 {
+/* .ps-3 {
 	padding-left: 1rem;
-}
+} */
 
 .article-header {
 	padding-bottom: 1rem;
@@ -6133,3 +6148,23 @@ body.sj-userlogin .sj-topbar .sj-languages {
 
 	}
 } */
+
+
+.volume-heading{
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	word-spacing: 2px;
+	padding: 0;
+}
+.volume-heading p{
+	border: 1px solid black;
+	background-color: navy;
+	color: white;
+	padding: 0.5rem 0;
+}
+.volume-heading  h3{
+	padding: 0.5rem 0;
+	background-color: yellow ;
+	color: black;
+	font-family: 'FontAwesome';
+}

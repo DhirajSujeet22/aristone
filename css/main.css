@@ -1358,6 +1358,7 @@ body.sj-home .sj-header .sj-nav {
 	padding: 0;
 	width: 100%;
 	float: left;
+	font-size: 16px;
 }
 
 .sj-navigation ul {
@@ -3660,7 +3661,7 @@ body.sj-userlogin .sj-topbar .sj-languages {
 .sj-author {
 	width: 100%;
 	float: left;
-	padding: 10px 0;
+	/* padding: 10px 0; */
 	margin: 33px 0 0;
 	border: 1px solid #ddd;
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -3684,8 +3685,7 @@ body.sj-userlogin .sj-topbar .sj-languages {
 }
 
 .sj-authorcontent {
-	padding: 20px;
-	padding-top: 10px !important;
+	padding: 10px;
 	overflow: hidden;
 	border-radius: 6px;
 	background: #fcfcfc;
@@ -3708,18 +3708,23 @@ body.sj-userlogin .sj-topbar .sj-languages {
 
 .sj-authorname h3 {
 	font-size: 16px;
-	font-weight: 500;
-	line-height: 16px;
+	font-weight: 600;
+	font-family: 'roboto';
+	color: black !important;
+}
+.sj-authorname h3 a{
+	color: black;
 }
 
 .sj-authorname span {
 	display: block;
 	font-size: 16px;
-	line-height: 16px;
+	font-weight: 400;
 }
 
 .sj-authorcontent .sj-description p {
 	margin: 0;
+	
 }
 
 .sj-comments {
@@ -5836,6 +5841,8 @@ body.sj-userlogin .sj-topbar .sj-languages {
 .bottom-sidebar {
 	border: none;
 	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	font-family: 'Quicksand';
 	/* padding-left: 1rem; */
 	/* border-left: 1px solid navy; */
 
@@ -5848,8 +5855,10 @@ body.sj-userlogin .sj-topbar .sj-languages {
 }
 
 .bottom-sidebar ul li {
-	font-size: 16px;
+	font-size: 14px;
 	border: 1px solid rgb(99, 108, 119) ;
+	border-bottom: none;
+	border-left: none;
 	border-right: none;
 	margin: 0;
 }
@@ -5859,7 +5868,8 @@ body.sj-userlogin .sj-topbar .sj-languages {
 	text-align: center;
 	padding: 0.8rem 0.2rem;
 	border-radius: 0.5rem;
-	margin: 1rem 0.5rem;
+	margin: 1rem ;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .bottom-sidebar .recent-article-box p {
@@ -5872,11 +5882,13 @@ body.sj-userlogin .sj-topbar .sj-languages {
 
 .leftsidebar {
 	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .leftsidebar li {
 	border: 1px solid rgb(99, 108, 119);
 	border-left:none;
+	border-bottom: none;
 }
 
 .most-recent a {
@@ -6167,4 +6179,8 @@ body.sj-userlogin .sj-topbar .sj-languages {
 	background-color: yellow ;
 	color: black;
 	font-family: 'FontAwesome';
+}
+.sj-content{
+	font-family: 'roboto';
+	word-spacing: 5px;
 }

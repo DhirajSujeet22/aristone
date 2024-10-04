@@ -21,6 +21,7 @@
   border-bottom: 1px solid lightgrey;
 }
 .author-affiliciation ul li {
+  cursor: pointer;
   list-style-type: none;
   font-size: 18px;
   font-weight: 500;

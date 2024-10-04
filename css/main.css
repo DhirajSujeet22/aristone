@@ -1,26 +1,4 @@
-/*
- @Author: Amento Tech
- @URL: https://themeforest.net/user/amentotech/portfolio
- This file contains the styling for the actual theme, this
- is the file you need to edit to change the look of the
- theme.
- However we used Less script to make things easy to maintain, this is the compressed ourput, we recommend to edit the less files and then recombile the files and add the result here, if you don't like to use less you can edit this file here.
- 
- This files contents are outlined below.
- 01.	Theme Reset Style
- 02.	Global Elements
- 03.	Menu
- 04.	Social
- 05.	Article
- 06.	Posts
- 07.	Responsive
- 08.	Widgets
- 09.	Flexslider
- 10.	Grid
-*/
-/* =============================================
-			Theme Reset Style					
-============================================= */
+
 @import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Quicksand:300,400,500,700);
 /* //google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -3708,19 +3686,38 @@ body.sj-userlogin .sj-topbar .sj-languages {
 
 .sj-authorname h3 {
 	font-size: 16px;
-	font-weight: 600;
-	font-family: 'roboto';
+	font-weight: 700;
+
 	color: black !important;
+
 }
 .sj-authorname h3 a{
-	color: black;
+	/* color: black; */
+	font-size: 17px;
+	/* font-family: system-ui, -apple-system, sans-serif; */
+	
+}.reaerach_article_heading{
+	color: black ;
+	font-family: 'Quicksand';
+	font-weight: 500;
+	word-spacing: 6px;
+	font-size: 17px;
 }
 
 .sj-authorname span {
 	display: block;
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 14px;
+	/* font-weight: 400 ; */
+	word-spacing: 3px;
 }
+/* .research_editros_name{
+	font-size: ;
+} */
+ .research-summary{
+	font-size: 1rem;
+	
+ }
+
 
 .sj-authorcontent .sj-description p {
 	margin: 0;
@@ -5864,13 +5861,22 @@ body.sj-userlogin .sj-topbar .sj-languages {
 }
 
 .bottom-sidebar .recent-article-box {
-	border: 1px solid rgb(99, 108, 119) ;
+	border: 2px solid rgb(99, 108, 119) ;
 	text-align: center;
 	padding: 0.8rem 0.2rem;
 	border-radius: 0.5rem;
 	margin: 1rem ;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	transition: all 0.5s ease-in-out;
+	
 }
+.bottom-sidebar .recent-article-box:hover{
+	border: 2px solid navy;
+}
+
+
+
+
 
 .bottom-sidebar .recent-article-box p {
 	font-size: 14px;
@@ -5880,15 +5886,23 @@ body.sj-userlogin .sj-topbar .sj-languages {
 
 
 
+
 .leftsidebar {
 	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	position: sticky !important;
+	top: 0;
 }
 
 .leftsidebar li {
 	border: 1px solid rgb(99, 108, 119);
 	border-left:none;
 	border-bottom: none;
+	transition: all 0.5s ease-in-out;
+}
+.leftsidebar li:hover{
+	border: 1px solid navy ;
+	border-left: 1px solid navy;
 }
 
 .most-recent a {
@@ -6121,6 +6135,7 @@ body.sj-userlogin .sj-topbar .sj-languages {
 .text-box .text-box-p1 {
 	font-size: 1.2rem;
 	font-weight: 600;
+	padding: 0.5rem 0.1rem;
 }
 
 .text-box h3 {
@@ -6148,9 +6163,9 @@ body.sj-userlogin .sj-topbar .sj-languages {
 
 	display: flex;
 	width: 100%;
-	gap: 10px;
+	gap: 4rem;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: start;
 
 }
 
@@ -6176,11 +6191,82 @@ body.sj-userlogin .sj-topbar .sj-languages {
 }
 .volume-heading  h3{
 	padding: 0.5rem 0;
-	background-color: yellow ;
+	background-color: #D2E0FB ;
 	color: black;
 	font-family: 'FontAwesome';
 }
 .sj-content{
 	font-family: 'roboto';
 	word-spacing: 5px;
+}
+.journal-section{
+	/* border: 1px solid black; */
+}
+.journal-section .journal-heading{
+	/* border: 1px solid red ; */
+	width: 100%;
+	padding: 1rem;
+	/* padding-left: 3rem; */
+	font-size: 2rem;
+	font-weight: 500;
+}
+.book-section .book-section-heading{
+	width: 100%;
+	padding: 1rem;
+	/* padding-left: 3rem; */
+	font-size: 2rem;
+	font-weight: 500;
+}
+.book-section{
+	gap: 1rem;
+	background-color: #FCFCFC ;
+}
+.sj-frontcover{
+	background-image: url(../images/ariston-full-wdth-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.home_main_heading{
+	font-size: 2.5rem;
+	padding: 2.5rem;
+	line-height: normal;
+	font-weight: 500;
+	color:black;
+	background-color: rgba(255, 255, 255, 0.689);
+	border: none;
+	border-radius: 1rem;
+}
+.pagination-box{
+	box-shadow: none;
+	border: none;
+}
+.pagination-box .pagination li{
+	list-style-type: none;
+	
+}
+.pagination-box .pagination a{
+	border: none;
+}
+.main-form-heading{
+	padding: 1.5rem;
+	padding-top: 2rem;
+
+}
+.main-row-for-form{
+	background-color: #fafafa;
+	margin: 1.5rem 0;
+}
+.main-form-heading .heading-be-a-reviwer{
+	font-size: 2.5rem;
+}
+.form-for-a-reviwer{
+	padding: 1.5rem;
+}
+.form-for-a-reviwer label{
+	font-size: 1rem;
+	font-weight: 500;
+}
+.form-for-a-reviwer .btn{
+	background-color: #5E9CEA;
 }
